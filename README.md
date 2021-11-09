@@ -9,7 +9,7 @@
 
 -   I'm most comfortable using Python, although I have dabbled a bit in Ruby, Javascript, and C# (very, very little).
 -   A fun fact about me is that I am Turing-complete...
--   beep boop.
+--   beep boop.
 
 <!---
 Rose-Haile/Rose-Haile is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
