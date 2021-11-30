@@ -1,16 +1,16 @@
- — Hi, I’m @Rose-Haile
- 
- — I’m interested in cryptocurrency, cryptography, number theory, and software development, and economics.
- 
- — I’m currently studying computer science and mathematics at MIT
- 
- —  How to reach me
+    Hi, I’m @Rose-Haile
+
+    I’m interested in cryptocurrency, cryptography, number theory, and software development, and economics.
+
+      I’m currently studying computer science and mathematics at MIT
+
+      How to reach me
       
       email: r.haile@protonmail.com, roseh@mit.edu
       
       discord: zen#1815
 
- —  Email me about
+      Email me about
       
       Anything listed in the interests section
       AI
@@ -20,9 +20,9 @@
       Work Opportunities
       Books
  
- I'm most comfortable using Python, although I have done a bit in Ruby, Javascript, and C#.
+     I'm most comfortable using Python, although I have done a bit in Ruby, Javascript, and C#.
  
- In the next few months I'll be: 
+     In the next few months I'll be: 
  
       Writing some code to rank cryptocurrencies according to a trustworthiness index
       Developing crypto applications
