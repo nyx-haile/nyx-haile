@@ -6,7 +6,7 @@ I’m currently studying computer science and mathematics at MIT
 
 How to reach me
       
-email: [nx@mit.edu](mailto:nx@mit.edu)
+email: [nx@mit.edu](mailto:nx@mit.edu)\\
 discord: ch.os
 signal: chaos.77
 
