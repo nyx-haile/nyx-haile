@@ -1,4 +1,4 @@
-    Hi, I’m @Rose-Haile
+    Hi, I’m @Nyx-Haile
 
     I’m interested in cryptocurrency, cryptography, number theory, and software development, and economics.
 
@@ -6,33 +6,34 @@
 
     How to reach me
       
-      email: r.haile@protonmail.com, roseh@mit.edu  
+      email: nx@mit.edu  
       discord: zen#1815
+      signal: chaos.77
 
     Email me about
       
-      Anything listed in the interests section
-      AI
-      ML
+      Any of my interests
+      AI/ML
       Interesting electronics, or designs
-      Projects
       Work Opportunities
       Books
  
-    I'm most comfortable using Python, although I have done a bit in Ruby, Javascript, and C#.
+    My dev stack is primarily python, javavscript, and C++, but I'm always excited to learn new languages. Recently I learned swift for work I did at Vana, and I'm currently learning Rust. I also enjoy bash scripting.
 
     In the next few months I'll be: 
  
-      Writing some code to rank cryptocurrencies according to a trustworthiness index
-      Developing crypto applications
-      Designing an ARG in the Boston area
-      Converting a recycled computer terminal into an oscilloscope
-      Writing a trading algorithm
-      Proposing a policy system for policy changes at MIT
-      Building new speaker enclosures for a recycled set of drivers
-      3d printing anything and everything that suits my fancy
+      [Writing some scripts to interface with the mindbody API to streamline check-in](https://github,com/nyx-haile/mindbody)
+      [Working on my personal website](https://github,com/nyx-haile/projects)
+      [Learning Rust](https://github,com/nyx-haile/language-learning)
+      [Writing a trading algorithm](https://github,com/nyx-haile/tr8r2)
+      [Building a remoteless electric skateboard](https://github,com/nyx-haile/sk9)
+
+    Notable past projects:
+
+        [Ranking cryptocurrencies according to a trustworthiness index](https://github.com/cathyy8c3/fintech_challenge)
+
       
 <!---
-Rose-Haile/Rose-Haile is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Nyx-Haile/Nyx-Haile is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 You can click the Preview link to take a look at your changes.
 --->
