@@ -31,6 +31,7 @@ In the next few months I'll be:
 Notable past projects:
 
 [Ranking cryptocurrencies according to a trustworthiness index](https://github.com/cathyy8c3/fintech_challenge)<br/>
+[Prompt engineering to generate stickers for an iMessage sticker app](https://github.com/nyx-haile/vana)
 
       
 <!---
