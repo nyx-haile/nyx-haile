@@ -6,31 +6,31 @@ I’m currently studying computer science and mathematics at MIT
 
 How to reach me
       
-email: [nx@mit.edu](mailto:nx@mit.edu)\\
-discord: ch.os
-signal: chaos.77
+email: [nx@mit.edu](mailto:nx@mit.edu)<br/>
+discord: ch.os<br/>
+signal: chaos.77<br/>
 
 Email me about
 
-Any of my interests
-AI/ML
-Interesting electronics, or designs
-Work Opportunities
-Books
+Any of my interests<br/>
+AI/ML<br/>
+Interesting electronics, or designs<br/>
+Work Opportunities<br/>
+Books<br/>
  
 My dev stack is primarily python, javavscript, and C++, but I'm always excited to learn new languages. Recently I learned swift for work I did at Vana, and I'm currently learning Rust. I also enjoy bash scripting.
 
 In the next few months I'll be: 
  
-[Writing some scripts to interface with the mindbody API to streamline check-in](https://github,com/nyx-haile/mindbody)
-[Working on my personal website](https://github,com/nyx-haile/projects)
-[Learning Rust](https://github,com/nyx-haile/language-learning)
-[Writing a trading algorithm](https://github,com/nyx-haile/tr8r2)
-[Building a remoteless electric skateboard](https://github,com/nyx-haile/sk9)
+[Writing some scripts to interface with the mindbody API to streamline check-in](https://github,com/nyx-haile/mindbody)<br/>
+[Working on my personal website](https://github,com/nyx-haile/projects)<br/>
+[Learning Rust](https://github,com/nyx-haile/language-learning)<br/>
+[Writing a trading algorithm](https://github,com/nyx-haile/tr8r2)<br/>
+[Building a remoteless electric skateboard](https://github,com/nyx-haile/sk9)<br/>
 
 Notable past projects:
 
-[Ranking cryptocurrencies according to a trustworthiness index](https://github.com/cathyy8c3/fintech_challenge)
+[Ranking cryptocurrencies according to a trustworthiness index](https://github.com/cathyy8c3/fintech_challenge)<br/>
 
       
 <!---
