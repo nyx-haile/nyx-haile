@@ -21,8 +21,7 @@ Books<br/>
 My dev stack is primarily python, javavscript, and C++, but I'm always excited to learn new languages. Recently I learned swift for work I did at Vana, and I'm currently learning Rust. I also enjoy bash scripting.
 
 In the next few months I'll be: 
- 
-[Writing some scripts to interface with the mindbody API to streamline check-in](https://github,com/nyx-haile/mindbody)<br/>
+
 [Working on my personal website](https://github,com/nyx-haile/projects)<br/>
 [Learning Rust](https://github,com/nyx-haile/language-learning)<br/>
 [Writing a trading algorithm](https://github,com/nyx-haile/tr8r2)<br/>
