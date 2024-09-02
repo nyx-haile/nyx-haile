@@ -1,6 +1,6 @@
 Hi, I’m @Nyx-Haile
 
-I’m interested in cryptocurrency, cryptography, number theory, and software development, and economics.
+I’m interested in cryptography, number theory, and software development, and economics.
 
 I’m currently studying computer science and mathematics at MIT
 
@@ -8,7 +8,7 @@ How to reach me
       
 email: [nx@mit.edu](mailto:nx@mit.edu)<br/>
 discord: ch.os<br/>
-signal: chaos.77<br/>
+signal: nyx.777<br/>
 
 Email me about
 
@@ -23,8 +23,7 @@ My dev stack is primarily python, javavscript, and C++, but I'm always excited t
 In the next few months I'll be: 
 
 [Working on my personal website](https://github,com/nyx-haile/projects)<br/>
-[Learning Rust](https://github,com/nyx-haile/language-learning)<br/>
-[Writing a trading algorithm](https://github,com/nyx-haile/tr8r2)<br/>
+[Building a tensor-based game analysis engine](https://github,com/ch-os/howtowin.lol)<br/>
 [Building a remoteless electric skateboard](https://github,com/nyx-haile/sk9)<br/>
 
 Notable past projects:
