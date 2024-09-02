@@ -1,6 +1,6 @@
 Hi, I’m @Nyx-Haile
 
-I’m interested in cryptography, number theory, and software development, and economics.
+I’m interested in cryptography, number theory, algorithms, and economics.
 
 I’m currently studying computer science and mathematics at MIT
 
