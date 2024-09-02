@@ -23,7 +23,7 @@ My dev stack is primarily python, javavscript, and C++, but I'm always excited t
 In the next few months I'll be: 
 
 [Working on my personal website](https://github,com/nyx-haile/projects)<br/>
-[Building a tensor-based game analysis engine](https://github,com/ch-os/howtowin.lol)<br/>
+[Building a tensor-based game analysis engine](https://github,com/ch-0s/howtowin.lol)<br/>
 [Building a remoteless electric skateboard](https://github,com/nyx-haile/sk9)<br/>
 
 Notable past projects:
