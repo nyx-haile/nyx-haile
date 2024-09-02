@@ -9,16 +9,8 @@ How to reach me
 email: [nx@mit.edu](mailto:nx@mit.edu)<br/>
 discord: ch.os<br/>
 signal: nyx.777<br/>
-
-Email me about
-
-Any of my interests<br/>
-AI/ML<br/>
-Interesting electronics, or designs<br/>
-Work Opportunities<br/>
-Books<br/>
  
-My dev stack is primarily python, javavscript, and C++, but I'm always excited to learn new languages. Recently I learned swift for work I did at Vana, and I'm currently learning Rust. I also enjoy bash scripting.
+My dev stack is primarily python, JavaScript, and C++, but I'm always excited to learn new languages. Recently I learned swift for work I did at Vana, and I'm currently learning Rust. I also enjoy bash scripting.
 
 In the next few months I'll be: 
 
