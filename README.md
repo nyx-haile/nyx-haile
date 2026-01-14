@@ -7,7 +7,7 @@ I’m currently studying computer science and mathematics at MIT
 How to reach me
       
 email: [nx@mit.edu](mailto:nx@mit.edu)<br/>
-discord: ch.os<br/>
+mastodon: theos@defcon.social<br/>
 signal: nyx.777<br/>
  
 My dev stack is primarily python, JavaScript, and C++, but I'm always excited to learn new languages. Recently I learned swift for work I did at Vana, and I'm currently learning Rust. I also enjoy bash scripting.
