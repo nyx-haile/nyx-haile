@@ -6,20 +6,15 @@ I’m currently studying computer science and mathematics at MIT
 
 How to reach me
       
-email: [nx@mit.edu](mailto:nx@mit.edu)<br/>
+email: my_first_name_backwards@mit.edu <br/>
 mastodon: theos@defcon.social<br/>
-signal: nyx.777<br/>
+signal: <br/>
  
-My dev stack is primarily python, JavaScript, and C++, but I'm always excited to learn new languages. Recently I learned swift for work I did at Vana, and I'm currently learning Rust. I also enjoy bash scripting.
+My dev stack is primarily python and C++, but I'm always excited to learn new languages. Recently I learned swift for work I did at Vana, and I'm currently learning Rust. I also enjoy bash scripting.
 
-In the next few months I'll be: 
+Projects:
 
-[Working on my personal website](https://github.com/nyx-haile/projects)<br/>
-[Building a tensor-based game analysis engine](https://github.com/ch-0s/howtowin.lol)<br/>
-[Building a remoteless electric skateboard](https://github.com/nyx-haile/sk9)<br/>
-
-Notable past projects:
-
+[Building a bot for a poker variant](https://github.com/nyx-haile/pokerbots)
 [Ranking cryptocurrencies according to a trustworthiness index](https://github.com/cathyy8c3/fintech_challenge)<br/>
 [Prompt engineering to generate stickers for an iMessage sticker app](https://github.com/nyx-haile/vana)
 
