@@ -14,7 +14,7 @@ My dev stack is primarily python and C++, but I'm always excited to learn new la
 
 Projects:
 
-[Building a bot for a poker variant](https://github.com/nyx-haile/pokerbots)
+[Building a bot for a poker variant](https://github.com/nyx-haile/pokerbots)<br/>
 [Ranking cryptocurrencies according to a trustworthiness index](https://github.com/cathyy8c3/fintech_challenge)<br/>
 [Prompt engineering to generate stickers for an iMessage sticker app](https://github.com/nyx-haile/vana)
 
