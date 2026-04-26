@@ -14,6 +14,7 @@ building way too many things rn
 
 Projects:
 
+[token usage detective](https://github.com/nyx-haile/sherlock)
 [Building a bot for a poker variant](https://github.com/nyx-haile/pokerbots)<br/>
 [Ranking cryptocurrencies according to a trustworthiness index](https://github.com/cathyy8c3/fintech_challenge)<br/>
 [Prompt engineering to generate stickers for an iMessage sticker app](https://github.com/nyx-haile/vana)
