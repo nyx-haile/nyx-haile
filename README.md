@@ -10,7 +10,7 @@ email: my_first_name_backwards@mit.edu <br/>
 mastodon: theos@defcon.social<br/>
 signal: <br/>
  
-My dev stack is primarily python and C++, but I'm always excited to learn new languages. Recently I learned swift for work I did at Vana, and I'm currently learning Rust. I also enjoy bash scripting.
+building way too many things rn
 
 Projects:
 
