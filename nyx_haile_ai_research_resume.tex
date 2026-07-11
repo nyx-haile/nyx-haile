@@ -1,0 +1,95 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{cmap}
+\usepackage[T1]{fontenc}
+\usepackage[empty]{fullpage}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\tabcolsep}{0pt}
+\addtolength{\oddsidemargin}{-0.55in}
+\addtolength{\evensidemargin}{-0.55in}
+\addtolength{\textwidth}{1.1in}
+\addtolength{\topmargin}{-0.55in}
+\addtolength{\textheight}{1.1in}
+\urlstyle{same}
+\raggedright
+\raggedbottom
+\input{glyphtounicode}
+\pdfgentounicode=1
+
+\titleformat{\section}{\large\bfseries\scshape}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{7pt}{3pt}
+
+\newcommand{\resumeItem}[1]{\item\small{#1}}
+\newcommand{\resumeSubheading}[4]{%
+  \vspace{1pt}\textbf{#1} \hfill #2\\
+  {\small\textit{#3}} \hfill {\small\textit{#4}}\\[-5pt]
+}
+\newcommand{\resumeProject}[2]{%
+  \vspace{1pt}\textbf{#1} \hfill {\small\textit{#2}}\\[-5pt]
+}
+\newcommand{\resumeListStart}{\begin{itemize}[label={-},leftmargin=0.18in,itemsep=1pt,topsep=2pt,parsep=0pt,partopsep=0pt]}
+\newcommand{\resumeListEnd}{\end{itemize}\vspace{-2pt}}
+
+\begin{document}
+
+\begin{center}
+  {\LARGE\bfseries Nyx Haile}\\[2pt]
+  {\large\bfseries AI Systems \& Research Engineer}\\[3pt]
+  \small \href{mailto:xyn@mit.edu}{xyn@mit.edu} $\mid$
+  \href{https://www.linkedin.com/in/nyx-haile-bb6711228}{LinkedIn} $\mid$
+  \href{https://github.com/nyx-haile}{GitHub} $\mid$
+  Open to remote work and relocation
+\end{center}
+
+\section{Education}
+\resumeSubheading{Massachusetts Institute of Technology}{2026}{B.S. Computer Science, B.S. Mathematics, Minor in Economics}{Cambridge, MA}
+
+\section{Experience}
+\resumeSubheading{Undergraduate Researcher}{June 2025 -- Present}{Weiss Laboratory for Synthetic Biology}{Cambridge, MA}
+\resumeListStart
+  \resumeItem{Built LLM-assisted generative design workflows for biologically constrained vascular microarchitectures using graph algorithms, spatial optimization, and formal constraints.}
+  \resumeItem{Configured and benchmarked high-performance computing workflows for mesh generation, validation, and experimental export across platforms.}
+\resumeListEnd
+
+\resumeSubheading{Research Mentor}{September 2023 -- Present}{The SHED}{Cambridge, MA}
+\resumeListStart
+  \resumeItem{Mentored interdisciplinary research in biocomputing, HCI, and personal transportation, while training lab staff on equipment and safety procedures.}
+\resumeListEnd
+
+\resumeSubheading{AI Developer}{December 2022 -- July 2023}{Vana}{Remote}
+\resumeListStart
+  \resumeItem{Organized the \$25K Vana x MIT Generative AI Hackathon, built its Python and JavaScript participant infrastructure, and shipped a Swift client for the Vana API.}
+\resumeListEnd
+
+\section{Selected Projects}
+\resumeProject{\href{https://github.com/nyx-haile/howtowin.lol}{howtowin.lol} $\mid$ Python, PyTorch, CUDA/AMP, Redis, Svelte/SvelteKit}{World model for post-game teaching}
+\resumeListStart
+  \resumeItem{Designed and trained a Dreamer-lineage RSSM world model with static context, player priors, event sequences, outcome, next-event, next-frame, and next-decision objectives.}
+  \resumeItem{Trained Plan B end-to-end on a 51k-game remote-GPU corpus with CUDA/AMP; reached outcome AUC@15 of about 0.884 on game-cold and 0.841 on player-cold holdouts, with a clean leak probe at about 0.531.}
+  \resumeItem{Built and evaluated a 1.16M-by-544 anchor retrieval index with GPU kNN across game-cold and player-cold holdouts, comparing random, static, and frame-feature baselines.}
+\resumeListEnd
+
+\resumeProject{\href{https://github.com/nyx-haile/forge}{Forge} $\mid$ Rust, Linux/systemd, RPC}{Local-first agent control plane}
+\resumeListStart
+  \resumeItem{Built a Rust daemon, CLI, hooks, scheduler, and worker/runtime orchestration layer for coordinating agent work across projects.}
+  \resumeItem{Specified typed model-trust, prompt-gate, resource-pressure, and worker-terminal contracts, with systemd sandboxing for bounded local execution.}
+  \resumeItem{Implemented evaluation, audit, provenance, and replay surfaces through structured daemon artifacts, logs, metadata, and tests.}
+\resumeListEnd
+
+\resumeProject{\href{https://github.com/nyx-haile/neuro}{Neuro} $\mid$ Python, NumPy}{Exploratory adaptive sparse neural core}
+\resumeListStart
+  \resumeItem{Explored resource-bounded induction with sampled activation, copula/co-firing statistics, sparse pruning, and graph rewiring.}
+\resumeListEnd
+
+\section{Technical Skills}
+\small\textbf{Languages:} Rust, Python, C/C++, SQL \quad
+\textbf{ML:} PyTorch, NumPy, GPU-aware training\\
+\small\textbf{Systems/Data:} Linux/systemd, Docker, Redis, Postgres, Git \quad
+\textbf{Web:} Svelte/SvelteKit, FastAPI/Flask
+
+\end{document}
