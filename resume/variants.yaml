@@ -1,0 +1,41 @@
+# Headlines are drafts for Nyx to replace in review.
+master:
+  headline: Systems & Research Engineer
+  sections: [education, experience, projects, skills]
+  maxPages: 2
+
+quant:
+  headline: Quantitative Developer
+  families: [quant]
+  sections: [education, experience, projects, skills]
+  order:
+    projects: [pokerbots, howtowin, strand, neuro, forge]
+  maxBulletsPerEntry: 3
+
+swe-ml:
+  headline: AI Systems & Research Engineer
+  families: [swe-ml]
+  sections: [education, experience, projects, skills]
+  order:
+    projects: [strand, forge, howtowin, sherlock, conch, neuro]
+  exclude: [pokerbots, grimoire, astraia]
+  maxBulletsPerEntry: 2
+
+hardware:
+  headline: Systems Engineer
+  families: [hardware, swe-ml]
+  sections: [education, experience, projects, skills]
+  order:
+    experience: [keyholder, weiss, shed, partial-role, vana]
+    projects: [conch, forge, strand, howtowin]
+  exclude: [neuro, sherlock, grimoire, astraia, pokerbots]
+  maxBulletsPerEntry: 2
+
+founder:
+  headline: Founder & Systems Engineer
+  families: [founder, quant]
+  sections: [experience, projects, education, skills]
+  order:
+    projects: [strand, forge, astraia, howtowin, pokerbots, sherlock, conch]
+  exclude: [neuro, grimoire]
+  maxBulletsPerEntry: 2

@@ -1,0 +1,424 @@
+# Sourced fact base. Every bullet names the file that supports it.
+# status: verified  = survived adversarial checking against its source
+#         narrowed  = a checker's narrower rewording of a refuted claim; not yet confirmed
+#         needs-nyx = a fact only Nyx can confirm (dates, roles, outcomes without a source)
+# PDFs include only verified bullets; the review page shows every status.
+
+person:
+  name: Nyx Haile
+  contact:
+    - { label: xyn@mit.edu, url: "mailto:xyn@mit.edu" }
+    - { label: LinkedIn, url: "https://www.linkedin.com/in/nyx-haile-bb6711228" }
+    - { label: GitHub, url: "https://github.com/nyx-haile" }
+    - { label: Open to relocation }
+
+sections:
+  - id: education
+    title: Education
+    kind: roles
+    entries:
+      - id: mit
+        title: Massachusetts Institute of Technology
+        right: "2026"
+        subtitle: B.S. Computer Science, B.S. Mathematics
+        location: Cambridge, MA
+        source: ~/notes/internships (application notes)
+        bullets:
+          - id: mit-coursework
+            text: "Coursework: algorithms, theory of computation, computer systems security, cryptography, statistics."
+            families: [quant, swe-ml, hardware, founder]
+            status: verified
+            source: ~/notes/internships (application notes)
+          - id: mit-econ-minor
+            text: Minor in Economics.
+            families: [quant, swe-ml, hardware, founder]
+            status: needs-nyx
+            note: Appears on every resume but in no other source.
+          - id: mit-6566-project
+            text: "Computer Systems Security (6.566) final project: a web server with WebAuthn login, script-injection protection, and payment-style secure transfers; about 2,000 lines."
+            families: [swe-ml, quant]
+            status: narrowed
+            source: ~/notes/internships (application notes)
+
+  - id: experience
+    title: Experience
+    kind: roles
+    entries:
+      - id: partial-role
+        title: Partial
+        right: 2025 -- Present
+        subtitle: Cofounder & CEO
+        location: London
+        source: ~/build/partial/docs/Vision.md
+        bullets:
+          - id: partial-joint-distribution-exchange
+            text: Designed a perpetual prediction-market exchange where positions are probability distributions over joint price paths across correlated assets, not binary outcomes.
+            families: [quant, founder]
+            status: verified
+            source: ~/build/partial/docs/Vision.md
+          - id: partial-eleven-market-types
+            text: Specified eleven market types, among them price paths, derived statistics (correlations, lead-lag) and reported statistics, under a single mechanism-design framework.
+            families: [quant, founder]
+            status: verified
+            source: ~/build/partial/docs/Vision.md
+          - id: partial-exponential-family-amm
+            text: Designed the market maker on the log-partition (cost) function of an exponential family, following Abernethy et al., so no-arbitrage, bounded market-maker loss and proper scoring follow from the construction.
+            families: [quant]
+            status: narrowed
+            source: ~/build/partial/docs/Vision.md
+          - id: partial-engine-latency-benchmark
+            text: "Benchmarked the Rust pricing engine end to end (loopback HTTP + PostgreSQL, local): binary quotes 8-9 ms p50; two-asset joint quotes on ~200k-cell grids 54-149 ms p50."
+            families: [quant, swe-ml]
+            status: narrowed
+            source: ~/build/partial/docs/engine-operation-benchmark-2026-07-23.md
+          - id: partial-cross-asset-repricing
+            text: Verified on a running engine that BTC-only trades repriced ETH as the Gaussian conditional predicts (residual about -2e-12), and a 1-sigma BTC binary matched Phi(-1) to seven decimals.
+            families: [quant, swe-ml]
+            status: narrowed
+            source: ~/build/partial/docs/engine-operation-benchmark-2026-07-23.md
+          - id: partial-fail-closed-tolerances
+            text: Restored strict 0.02 forward-KL / 0.02 relative-price-error projection thresholds as the engine's fail-closed runtime default, keeping looser bounds for diagnostics only; 12 open model failures remain tracked.
+            families: [quant, swe-ml]
+            status: verified
+            source: ~/build/partial (engine docs)
+          - id: partial-customer-discovery
+            text: Ran customer discovery with analysts, BI practitioners and quantitative researchers.
+            families: [founder]
+            status: needs-nyx
+
+      - id: weiss
+        title: Weiss Laboratory for Synthetic Biology, MIT
+        right: June 2025 -- ?
+        subtitle: Undergraduate Researcher (UROP)
+        location: Cambridge, MA
+        source: UROP proposal, 2025-04-15
+        bullets:
+          - id: weiss-3d-printing-role
+            text: Scoped a summer 2025 project on vascularised liver organoids as the lab's 3D-printing point of contact, translating design requests into printable G-code.
+            families: [hardware]
+            status: needs-nyx
+            note: The proposal describes planned work; confirm what was done and the end date (Sept 2025 vs present).
+          - id: weiss-vascular-prototypes
+            text: Designed and tested cell-free 3D-printed prototype organoids with vascular channels allowing fluid flow into the core.
+            families: [hardware]
+            status: needs-nyx
+            note: Sourced only as a planned deliverable.
+          - id: weiss-generative-design
+            text: Built generative design pipelines for biologically constrained vascular microarchitectures using graph algorithms, spatial optimisation and formal constraints.
+            families: [swe-ml]
+            status: needs-nyx
+            note: On every current resume; no source found.
+
+      - id: shed
+        title: The SHED, MIT
+        right: Sept 2023 -- ?
+        subtitle: Research Mentor
+        location: Cambridge, MA
+        bullets:
+          - id: shed-mentoring
+            text: Mentored interdisciplinary student research in biocomputing, HCI and personal transportation, and trained lab staff on equipment and safety.
+            families: [swe-ml, hardware, founder]
+            status: needs-nyx
+            note: No source beyond the resumes; end date conflicts (Sept 2025 vs present).
+
+      - id: vana
+        title: Vana
+        right: Dec 2022 -- July 2023
+        subtitle: AI Developer
+        location: Remote
+        url: https://github.com/nyx-haile/vana
+        bullets:
+          - id: vana-sticker-prompts
+            text: Engineered and iterated prompt templates for personalised AI-generated sticker portraits, tuning style and expression cues for identity retention and consistency.
+            families: [swe-ml, founder]
+            status: verified
+            source: github.com/nyx-haile/vana
+          - id: vana-api-scripts
+            text: Wrote Python scripts for the Vana API that submit text-to-image jobs with configurable prompt, seed, sample count and diffusion steps.
+            families: [swe-ml]
+            status: narrowed
+            source: github.com/nyx-haile/vana prompt.py
+          - id: vana-hackathon
+            text: Organised the $25K Vana x MIT Generative AI Hackathon end to end -- logistics, outreach and judging.
+            families: [founder, swe-ml]
+            status: needs-nyx
+            note: Only source is a one-line personal note.
+          - id: vana-swift-client
+            text: Shipped a Swift client for the Vana API.
+            families: [swe-ml]
+            status: needs-nyx
+            note: The public repo has only Python; no Swift or JavaScript found.
+
+      - id: keyholder
+        title: MITERS and MIT Radio Society
+        right: ""
+        subtitle: Keyholder
+        location: Cambridge, MA
+        bullets:
+          - id: keyholder-ee
+            text: Keyholder at MITERS (student-run electronics and fabrication shop) and the MIT Radio Society; hands-on electronics and fabrication.
+            families: [hardware]
+            status: needs-nyx
+            note: Add dates and any concrete build (PCB, radio, robot).
+
+  - id: projects
+    title: Selected Projects
+    kind: projects
+    note: Repositories marked private are available on request.
+    entries:
+      - id: strand
+        title: Strand
+        visibility: private
+        stack: Rust, FoundationDB
+        right: Capability-authenticated issue tracker
+        source: ~/build/strand
+        bullets:
+          - id: strand-core-system
+            text: Built a federable, capability-authenticated issue tracker in Rust on FoundationDB, with line-level blame and content-addressed rationale.
+            families: [swe-ml, founder]
+            status: verified
+            source: ~/build/strand/README.md
+          - id: strand-scope-release
+            text: Shipped a 16-crate, ~71k-line Rust workspace through v1.0.0 GA (10/10 verification gates) and v1.1.0, then a v2.0 governed-execution prerelease.
+            families: [swe-ml, founder]
+            status: verified
+            source: ~/build/strand/CHANGELOG.md
+          - id: strand-auth
+            text: Implemented macaroon capability auth (HMAC-SHA256) with tenant, op-class, expiry and prefix caveats; the server re-derives the writing actor instead of trusting clients.
+            families: [swe-ml]
+            status: verified
+            source: ~/build/strand/README.md
+          - id: strand-fuzz
+            text: Wrote stable-Rust fuzz harnesses for three frozen v1 formats (wire frames, CBOR citations, backup files); the first pass ran 284,846 iterations with zero crashes.
+            families: [swe-ml, quant]
+            status: verified
+            source: ~/build/strand/CHANGELOG.md
+          - id: strand-bounded-storage
+            text: Bounded FoundationDB transactions with timeouts and retry limits so storage outages surface as typed errors instead of hangs.
+            families: [swe-ml]
+            status: verified
+            source: ~/build/strand/CHANGELOG.md
+          - id: strand-scale-chaos
+            text: Built a five-year synthesized-data scale test and an eight-phase backup chaos drill; the drill exposed a backup-completeness gap, tracked for a pre-v1 fix.
+            families: [swe-ml]
+            status: narrowed
+            source: ~/build/strand/CHANGELOG.md
+
+      - id: forge
+        title: Forge
+        visibility: private
+        stack: Rust, systemd, RPC
+        right: Local-first agent control plane
+        source: ~/build/forge
+        bullets:
+          - id: forge-rust-control-plane
+            text: Built a Rust daemon, operator CLI, Claude Code hooks and provider proxy that coordinate coding-agent work across multiple git repositories.
+            families: [swe-ml, founder]
+            status: verified
+            source: ~/build/forge/README.md
+          - id: forge-scale
+            text: Wrote a 13-crate, ~148k-line Rust codebase over 640+ commits in five months as sole developer, working with AI coding assistants.
+            families: [swe-ml]
+            status: narrowed
+            source: ~/build/forge (git)
+          - id: forge-blame-at-write
+            text: Implemented an atomic file-write tool that records attribution for every write and reverts the file if recording fails; the default recorder fails closed.
+            families: [swe-ml]
+            status: verified
+            source: ~/build/forge
+          - id: forge-bounded-retry
+            text: Added bounded, jittered exponential backoff to scheduler dispatch, seeded per task so retry waves de-correlate in production and replay exactly in tests.
+            families: [swe-ml, quant]
+            status: verified
+            source: ~/build/forge
+          - id: forge-systemd-hardening
+            text: Ran the daemon under systemd with NoNewPrivileges, ProtectSystem=strict and a read-only home, confining writes to its own state directories.
+            families: [swe-ml, hardware]
+            status: verified
+            source: ~/build/forge
+
+      - id: howtowin
+        title: howtowin.lol
+        url: https://github.com/nyx-haile/howtowin.lol
+        stack: Python, PyTorch, CUDA, Redis
+        right: World model for post-game teaching
+        source: ~/build/howtowin.lol/README.md
+        bullets:
+          - id: howtowin-rssm-design
+            text: Designed a Dreamer-lineage RSSM world model for League of Legends combining static context, player priors and event sequences with outcome, next-event, next-frame and next-decision heads.
+            families: [swe-ml, quant]
+            status: verified
+            source: ~/build/howtowin.lol/README.md
+          - id: howtowin-training-auc
+            text: Trained end to end on 12.8k-game (local) and 51k-game (remote GPU) corpora; outcome AUC@15 reached about 0.884 game-cold and 0.841 player-cold, with a clean leak probe.
+            families: [swe-ml, quant]
+            status: narrowed
+            source: ~/build/howtowin.lol/README.md
+          - id: howtowin-leakage-holdouts
+            text: Designed leakage-controlled evaluation with a game-cold holdout split by match-ID hash and a player-cold holdout that keeps a hash-selected set of players out of training.
+            families: [swe-ml, quant]
+            status: narrowed
+            source: ~/build/howtowin.lol/README.md
+          - id: howtowin-retrieval-index
+            text: Built a GPU kNN retrieval check over ~1.16M anchor states x 544 dims to test whether world-model states cluster by outcome, against random, static and hand-crafted baselines.
+            families: [swe-ml]
+            status: verified
+            source: ~/build/howtowin.lol/README.md
+          - id: howtowin-retrieval-gate-honest
+            text: The retrieval model narrowly missed its 0.7-bit gate at k=64 (about 0.698 bits game-cold) and trails a hand-crafted feature baseline by about 0.10 bits.
+            families: [swe-ml, quant]
+            status: narrowed
+            source: ~/build/howtowin.lol/README.md
+          - id: howtowin-data-pipeline
+            text: Built a Riot API match-collection pipeline with Redis work queues and 429-driven rate limiting.
+            families: [swe-ml]
+            status: narrowed
+            source: ~/build/howtowin.lol/code/redis_init.py
+
+      - id: pokerbots
+        title: MIT Pokerbots
+        url: https://github.com/nyx-haile/pokerbots
+        stack: Python
+        right: Heads-up poker-variant bot, January 2026
+        source: github.com/nyx-haile/pokerbots README
+        bullets:
+          - id: pokerbots-placement
+            text: Built a Python bot for MIT Pokerbots' heads-up poker variant, largely with AI-assisted coding; the team placed about 15th of 70.
+            families: [quant, swe-ml]
+            status: verified
+            source: github.com/nyx-haile/pokerbots README
+          - id: pokerbots-mc-equity
+            text: Implemented Monte Carlo equity estimation, with exact enumeration for discards, using quick and deep sampling paths to fit a per-decision compute budget.
+            families: [quant, swe-ml]
+            status: verified
+            source: github.com/nyx-haile/pokerbots
+          - id: pokerbots-multipolicy
+            text: Built a multi-policy architecture (tight, bluff, desperate, lock-win) with a strategic overseer choosing among threshold policies.
+            families: [quant]
+            status: verified
+            source: github.com/nyx-haile/pokerbots README
+          - id: pokerbots-winlock
+            text: Adopted win-locking after reviewing scrimmage games -- fold every remaining hand once the lead guarantees a positive finish -- gaining at least five scrimmage places.
+            families: [quant]
+            status: verified
+            source: github.com/nyx-haile/pokerbots README
+          - id: pokerbots-leaderboard-peak
+            text: Held top-10 positions on the scrimmage leaderboard in week 2.
+            families: [quant]
+            status: verified
+            source: github.com/nyx-haile/pokerbots README
+
+      - id: neuro
+        title: Neuro
+        visibility: private
+        stack: Python, NumPy
+        right: Exploratory adaptive sparse neural core
+        source: ~/build/neuro
+        bullets:
+          - id: neuro-mechanisms
+            text: Implemented temperature-controlled sampled activation, copula-driven rewiring, a loss-plus-sparsity objective and automatic pruning with edge rebalancing.
+            families: [swe-ml, quant]
+            status: verified
+            source: ~/build/neuro/README.md
+          - id: neuro-nlogn-sparse-graph
+            text: Auto-scaled the graph to n log n nodes in input size with degree capped at log(graph size).
+            families: [swe-ml]
+            status: verified
+            source: ~/build/neuro/README.md
+          - id: neuro-mnist-run
+            text: Trained online on 60,000 MNIST samples with 4,431 auto-sized hidden nodes, reaching 84.2% running accuracy in one epoch (not held-out test accuracy).
+            families: [swe-ml]
+            status: verified
+            source: ~/build/neuro (mnist_sparse_training.jsonl)
+          - id: neuro-solomonoff-research
+            text: Wrote a research note relating the model to resource-bounded, stream-based approximations of Solomonoff induction, and where it falls short of them.
+            families: [swe-ml, quant]
+            status: verified
+            source: ~/build/neuro/research.md
+
+      - id: sherlock
+        title: Sherlock
+        url: https://github.com/nyx-haile/sherlock
+        stack: Rust, Dolt
+        right: Token-usage forensics for agent CLIs
+        source: ~/build/sherlock/README.md
+        bullets:
+          - id: sherlock-attribution-reports
+            text: Built a Rust CLI that ingests agent-CLI logs (Claude Code, Codex, Copilot), attributes token usage per session, and reports what burns tokens without adding value.
+            families: [swe-ml, founder]
+            status: verified
+            source: ~/build/sherlock/README.md
+          - id: sherlock-dolt-storage
+            text: Stored ingested usage in a Dolt versioned-SQL repository.
+            families: [swe-ml]
+            status: verified
+            source: ~/build/sherlock/README.md
+          - id: sherlock-llm-analysis
+            text: Added LLM-narrated before/after cost analysis over Anthropic, OpenAI, Gemini or local backends, and shipped a Claude Code skill that runs it on request.
+            families: [swe-ml]
+            status: verified
+            source: ~/build/sherlock/README.md
+
+      - id: conch
+        title: Conch
+        url: https://github.com/nyx-haile/conch
+        stack: Rust, ONNX Runtime
+        right: Voice-interview-to-brief CLI
+        source: ~/build/conch/README.md
+        bullets:
+          - id: conch-pipeline
+            text: Built a Rust voice-interview CLI that runs spoken Q&A over mic and TTS at three model depths and writes a persisted brief.
+            families: [swe-ml, founder]
+            status: verified
+            source: ~/build/conch/README.md
+          - id: conch-local-stt
+            text: Integrated streaming 16 kHz audio with cloud or offline on-CPU speech-to-text (Nemotron 0.6B int8 via ONNX Runtime) and a live Ratatui waveform view.
+            families: [swe-ml, hardware]
+            status: verified
+            source: ~/build/conch/README.md
+
+      - id: grimoire
+        title: Grimoire
+        visibility: private
+        stack: Rust, SQLite
+        right: Durable agent memory library
+        source: ~/build/grimoire/README.md
+        bullets:
+          - id: grimoire-hash-chain
+            text: Built a Rust library for durable agent memory on an append-only, SHA-256 hash-chained log with a rebuildable SQLite projection.
+            families: [swe-ml]
+            status: verified
+            source: ~/build/grimoire/README.md
+
+      - id: astraia
+        title: Astraia
+        visibility: private
+        stack: TypeScript, Python, SQLite
+        right: Personal multi-agent operations system (on OpenClaw)
+        source: ~/.openclaw/workspace
+        bullets:
+          - id: astraia-dashboard
+            text: Built a localhost-only operations dashboard (Bun, React, SQLite) where outbound email and messages pass expiring, hash-pinned previews and fail closed.
+            families: [swe-ml, founder]
+            status: verified
+            source: ~/.openclaw/workspace (dashboard README)
+          - id: astraia-readership-study
+            text: "Measured whether 119 agent-generated reports were read by later sessions: 55.5% by an assistant or operator agent session, and at most 10.9% by none."
+            families: [swe-ml, founder]
+            status: narrowed
+            source: ~/.openclaw/workspace/research/2026-09-07-artifact-readership.md
+          - id: astraia-prompt-budget
+            text: Cut the injected agent instructions to fit the prompt budget (39,006 to 25,492 and 28,866 to 8,730 characters), with a budget-check script to enforce it.
+            families: [swe-ml]
+            status: narrowed
+            source: ~/.openclaw/workspace/FIVE-PROBLEMS.md
+
+  - id: skills
+    title: Technical Skills
+    kind: skills
+    lines:
+      - { id: skills-languages, label: Languages, items: "Rust, Python, TypeScript, SQL", families: [quant, swe-ml, hardware, founder] }
+      - { id: skills-ml, label: ML, items: "PyTorch, NumPy, CUDA, GPU training and retrieval", families: [quant, swe-ml] }
+      - { id: skills-systems, label: Systems, items: "Linux/systemd, Docker, FoundationDB, PostgreSQL, SQLite, Redis", families: [quant, swe-ml, hardware, founder] }
+      - { id: skills-web, label: Web, items: "SvelteKit, React, Next.js", families: [swe-ml, founder] }
+      - { id: skills-hardware, label: Hardware, items: "Fusion 360, Arduino", families: [hardware] }
