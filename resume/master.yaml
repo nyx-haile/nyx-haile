@@ -54,16 +54,15 @@ sections:
             status: verified
             source: ~/build/partial/docs/Vision.md
           - id: partial-customer-discovery
-            text: Ran discovery conversations with traders, a former systematic-fund quant, and derivatives and compliance veterans, which pointed the first customer at quantitative researchers who want to trade their own models.
+            text: Ran customer discovery with self-funded traders, crypto executives, quantitative researchers and hedge fund managers.
             families: [founder, quant]
-            status: needs-nyx
-            source: ~/private/partial/interviews (aggregated; no names)
-            note: Drafted from four interview notes; give the real number of conversations if it is higher.
+            status: verified
+            source: confirmed by Nyx in review, 2026-10-01; ~/private/partial/interviews
           - id: partial-outreach
-            text: Led advisor and investor outreach and wrote the pitch materials, from a 30-second pitch to a 30-minute walkthrough.
+            text: Led the company's fundraising, building its investor narrative and pitching venture investors and accelerators.
             families: [founder]
             status: needs-nyx
-            source: ~/private/partial/outreach; ~/build/partial/docs/public/pitch_versions.md
+            source: ~/private/partial/outreach (VC pitch 2026-09-22, advisor asks, accelerator cycle); reworded per review 2026-10-01
           - id: partial-cross-asset-repricing
             text: Verified on the live engine that a trade in one asset repriced a correlated asset as the model predicts, to within floating-point precision.
             families: [founder, quant, swe-ml]
