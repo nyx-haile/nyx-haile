@@ -415,6 +415,7 @@ sections:
             source: ~/build/conch/README.md
 
       - id: grimoire
+        hidden: true  # dropped as a project (Nyx, 2026-10-01)
         title: Grimoire
         visibility: private
         stack: Rust, SQLite
