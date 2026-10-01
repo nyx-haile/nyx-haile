@@ -16,11 +16,14 @@ function resumeData() {
     load(source) {
       if (source !== id) return null;
       SOURCES.forEach((f) => this.addWatchFile(f));
-      const [master, variants] = SOURCES.map((f) => parse(readFileSync(f, 'utf8')));
+      const [master, base] = SOURCES.map((f) => parse(readFileSync(f, 'utf8')));
+      const overlay = process.env.RESUME_VARIANTS;
+      if (overlay) this.addWatchFile(overlay);
+      const variants = { ...base, ...(overlay ? parse(readFileSync(overlay, 'utf8')) : {}) };
       return `export const master = ${JSON.stringify(master)};\nexport const variants = ${JSON.stringify(variants)};`;
     },
     handleHotUpdate({ file, server }) {
-      if (!SOURCES.includes(file)) return;
+      if (!SOURCES.includes(file) && file !== process.env.RESUME_VARIANTS) return;
       server.moduleGraph.invalidateModule(server.moduleGraph.getModuleById(id));
       server.ws.send({ type: 'custom', event: 'resume:updated' });
       return [];

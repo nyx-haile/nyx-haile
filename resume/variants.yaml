@@ -1,6 +1,6 @@
-# Headlines are drafts for Nyx to replace in review.
+# Headlines follow the 2026-10-01 research: none on the master; each variant names its target role.
 master:
-  headline: Systems & Research Engineer
+  # No fixed headline on the master; each tailored variant names its target role.
   sections: [education, experience, projects, skills]
   maxPages: 2
 
@@ -17,7 +17,7 @@ quant:
     partial-role: 3
 
 swe-ml:
-  headline: AI Systems & Research Engineer
+  headline: Software Engineer
   families: [swe-ml]
   sections: [education, experience, projects, skills]
   order:
@@ -28,7 +28,7 @@ swe-ml:
   maxBulletsPerEntry: 2
 
 hardware:
-  headline: Systems Engineer
+  headline: Software Engineer
   families: [hardware, swe-ml]
   sections: [education, experience, projects, skills]
   order:
@@ -38,7 +38,7 @@ hardware:
   maxBulletsPerEntry: 2
 
 founder:
-  headline: Founder & Systems Engineer
+  headline: Founding Engineer
   families: [founder, quant]
   sections: [experience, projects, education, skills]
   order:

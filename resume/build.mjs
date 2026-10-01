@@ -9,10 +9,13 @@ import { parse } from 'yaml';
 import { selectVariant } from './select.mjs';
 
 const ROOT = import.meta.dirname;
-const OUT = path.join(ROOT, 'out');
+// RESUME_VARIANTS adds variants from a file kept outside the repository (role-specific
+// resumes); RESUME_OUT sends their output there too.
+const OUT = process.env.RESUME_OUT ?? path.join(ROOT, 'out');
 const load = (f) => parse(readFileSync(path.join(ROOT, f), 'utf8'));
 const master = load('master.yaml');
-const variants = load('variants.yaml');
+const extra = process.env.RESUME_VARIANTS ? parse(readFileSync(process.env.RESUME_VARIANTS, 'utf8')) : {};
+const variants = process.env.RESUME_VARIANTS ? extra : { ...load('variants.yaml'), ...extra };
 
 const args = process.argv.slice(2);
 const check = args.includes('--check');

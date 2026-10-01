@@ -17,7 +17,17 @@ export function selectVariant(master, variants, key, { draft = false } = {}) {
     .filter(Boolean)
     .map((s) => {
       if (s.kind === 'skills') {
-        return { ...s, lines: (s.lines ?? []).filter((l) => hit(l.families) && !excluded.has(l.id)) };
+        const lines = v.pick?.[s.id] ? (s.lines ?? []).filter((l) => v.pick[s.id].includes(l.id)) : (s.lines ?? []).filter((l) => hit(l.families) && !excluded.has(l.id));
+        return { ...s, lines };
+      }
+      // `pick` names exact entries and bullets (role-specific resumes); otherwise select by family.
+      if (v.pick) {
+        const entries = ordered((s.entries ?? []).filter((e) => !e.hidden && v.pick[e.id]), v.order?.[s.id] ?? Object.keys(v.pick))
+          .map((e) => ({
+            ...e,
+            bullets: v.pick[e.id].map((id) => (e.bullets ?? []).find((b) => b.id === id)).filter((b) => b && shown(b)),
+          }));
+        return { ...s, entries };
       }
       const entries = ordered(s.entries ?? [], v.order?.[s.id])
         .filter((e) => !e.hidden && !excluded.has(e.id))
