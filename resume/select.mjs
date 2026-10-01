@@ -22,7 +22,7 @@ export function selectVariant(master, variants, key, { draft = false } = {}) {
       const entries = ordered(s.entries ?? [], v.order?.[s.id])
         .filter((e) => !excluded.has(e.id))
         .map((e) => {
-          const bullets = (e.bullets ?? [])
+          const bullets = ordered(e.bullets ?? [], v.bulletOrder?.[e.id])
             .filter((b) => shown(b) && hit(b.families) && !excluded.has(b.id))
             .slice(0, v.maxBullets?.[e.id] ?? v.maxBulletsPerEntry ?? Infinity);
           return { ...e, bullets, keep: !(e.bullets ?? []).length || bullets.length > 0 };

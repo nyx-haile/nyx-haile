@@ -10,6 +10,8 @@ quant:
   sections: [education, experience, projects, skills]
   order:
     projects: [pokerbots, howtowin, strand, neuro, forge]
+  bulletOrder:
+    partial-role: [partial-founded, partial-engine-performance, partial-eleven-market-types, partial-cross-asset-repricing]
   maxBulletsPerEntry: 3
 
 swe-ml:
@@ -19,6 +21,8 @@ swe-ml:
   order:
     projects: [strand, forge, howtowin, sherlock, conch, neuro]
   exclude: [pokerbots, grimoire, astraia]
+  bulletOrder:
+    partial-role: [partial-founded, partial-engine-performance, partial-cross-asset-repricing]
   maxBulletsPerEntry: 2
 
 hardware:

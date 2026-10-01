@@ -69,13 +69,12 @@ sections:
             status: verified
             source: ~/build/partial/docs/evidence/2026-09-17-live-venue-premise.md (Nyx); metric endorsed by Nyx in review, 2026-10-01
           - id: partial-engine-performance
-            text: Co-built the Rust pricing engine with my cofounder; it prices two-asset trades over ~200k-cell probability grids in 50-150 ms on a 2-CPU server.
+            text: Built the Rust pricing engine with my cofounder; it prices two-asset trades over ~200k-cell probability grids in 50-150 ms on a 2-CPU server.
             families: [quant, swe-ml]
-            status: needs-nyx
-            source: ~/build/partial/docs/engine-operation-benchmark-2026-07-23.md (benchmark by cofounder)
-            note: The benchmark and the optimisation it measures were committed by your cofounder; confirm "co-built" is how you want it framed.
+            status: verified
+            source: ~/build/partial/docs/engine-operation-benchmark-2026-07-23.md (benchmark by cofounder); framing confirmed by Nyx in review, 2026-10-01
           - id: partial-eleven-market-types
-            text: Devised eleven market types, from price paths and correlations to lead-lag and reported statistics, unified under one mechanism-design framework.
+            text: Designed eleven new classes of tradable contract, from price paths and correlations to lead-lag and reported statistics, all under one pricing framework.
             families: [quant]
             status: verified
             source: ~/build/partial/docs/Vision.md
