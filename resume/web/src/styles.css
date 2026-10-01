@@ -15,16 +15,23 @@ header { text-align: center; }
 h1 { margin: 0; font-size: 17.28pt; line-height: 1.2; }
 .headline { margin: 2pt 0 3pt; font-weight: bold; font-size: 12pt; }
 .contact { margin: 0; font-size: 10pt; }
-a { color: inherit; }
+a { color: inherit; text-decoration: none; }  /* hyperref hidelinks */
 h2 { margin: 7pt 0 3pt; border-bottom: 0.4pt solid #111; font-size: 12pt; font-variant: small-caps; }
-.entry { margin-top: 1pt; }
+.entry { margin-top: 0; }
 .row { display: flex; justify-content: space-between; gap: 1rem; }
-.sub, .right, .note { font-size: 10pt; }
-.right { font-style: italic; white-space: nowrap; }
+.sub, .note { font-size: 10pt; }
+.note { margin: 0 0 2pt; font-style: italic; line-height: 12pt; }  /* {\small\textit{...}}\\[2pt] */
+.right { white-space: nowrap; }
+.projects .right { font-style: italic; font-size: 10pt; }  /* \resumeProject: {\small\textit{#2}} */
+.roles .right { font-size: 10.95pt; }  /* \resumeSubheading: upright #2 */
 .stack { font-weight: normal; }
 .private { font-weight: normal; font-size: 0.85em; }
-ul { margin: 2pt 0 -2pt; padding-left: 0.18in; list-style: "- "; }  /* \resumeListEnd: \vspace{-2pt} */
-.entry-head { margin-bottom: -5pt; }  /* \resumeSubheading / \resumeProject end with \\[-5pt] */
+/* Baseline distances measured from the LaTeX PDF: title->subtitle 13.4pt, subtitle->first bullet 14.4pt,
+   bullet->bullet 13pt (12pt + 1pt itemsep), last bullet->next heading 14.4pt. */
+ul { margin: 0; padding-left: 0.18in; list-style: "- "; }
+.entry-head .row { line-height: 13.4pt; }
+.entry-head .row.sub { line-height: 14.4pt; }
+.entry + .entry { margin-top: 1.4pt; }
 li { font-size: 10pt; line-height: 12pt; margin: 0 0 1pt; }
 .skills { margin: 0; font-size: 10pt; line-height: 12pt; }
 @media print { :root { background: none; } body { padding: 0; } .variant-nav { display: none; } .page { box-shadow: none; margin: 0; break-after: page; } .page.measure { display: none; } }

@@ -140,7 +140,7 @@ function Flow({ blocks, view, ids, mark }) {
         <Header person={view.person} headline={view.headline} ids={ids} />
       </div>
     ) : (
-      <section key={`${sec.s.id}:${i}`} data-review-boundary={`resume.${sec.s.id}`}>
+      <section key={`${sec.s.id}:${i}`} className={sec.s.kind} data-review-boundary={`resume.${sec.s.id}`}>
         {sec.items.map((it, j) =>
           it.blk ? (
             <div key={it.blk.key} {...m(it.blk)}>
