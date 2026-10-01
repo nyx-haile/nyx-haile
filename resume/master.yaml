@@ -122,7 +122,7 @@ sections:
             text: Scoped a summer 2025 project on vascularised liver organoids as the lab's 3D-printing point of contact, translating design requests into printable G-code.
             families: [hardware]
             status: needs-nyx
-            note: Not in the 2025 emails; the project printer took STL files. Where does G-code come from?
+            hidden: true  # proposed in the April 2025 UROP proposal, not shown as done (Nyx: 'maybe something i proposed', 2026-10-01)
           - id: weiss-vascular-prototypes
             text: Designed and tested cell-free 3D-printed prototype organoids with vascular channels allowing fluid flow into the core.
             families: [hardware]
