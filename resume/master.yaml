@@ -238,6 +238,7 @@ sections:
             families: [swe-ml]
             status: narrowed
             source: ~/build/strand/CHANGELOG.md
+            hidden: true  # too technical (Nyx, 2026-10-01)
 
       - id: forge
         title: Forge
