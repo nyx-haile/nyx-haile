@@ -9,10 +9,12 @@ quant:
   families: [quant]
   sections: [education, experience, projects, skills]
   order:
-    projects: [pokerbots, howtowin, strand, neuro, forge]
+    projects: [pokerbots, howtowin, strand, neuro, induction-note, forge]
   bulletOrder:
     partial-role: [partial-founded, partial-engine-performance, partial-eleven-market-types, partial-cross-asset-repricing]
-  maxBulletsPerEntry: 3
+  maxBulletsPerEntry: 2
+  maxBullets:
+    partial-role: 3
 
 swe-ml:
   headline: AI Systems & Research Engineer
@@ -20,7 +22,7 @@ swe-ml:
   sections: [education, experience, projects, skills]
   order:
     projects: [strand, forge, howtowin, sherlock, conch, neuro]
-  exclude: [pokerbots, grimoire, astraia, neuro, conch]
+  exclude: [pokerbots, grimoire, astraia, neuro, induction-note, conch]
   bulletOrder:
     partial-role: [partial-founded, partial-engine-performance, partial-cross-asset-repricing]
   maxBulletsPerEntry: 2
@@ -32,7 +34,7 @@ hardware:
   order:
     experience: [keyholder, weiss, shed, partial-role, vana]
     projects: [conch, forge, strand, howtowin]
-  exclude: [neuro, sherlock, grimoire, astraia, pokerbots, skills-web, arkos-state-output, howtowin]
+  exclude: [neuro, induction-note, sherlock, grimoire, astraia, pokerbots, skills-web, arkos-state-output, howtowin]
   maxBulletsPerEntry: 2
 
 founder:
@@ -41,7 +43,7 @@ founder:
   sections: [experience, projects, education, skills]
   order:
     projects: [strand, forge, astraia, howtowin, pokerbots, sherlock, conch]
-  exclude: [neuro, grimoire, conch]
+  exclude: [neuro, induction-note, grimoire, conch]
   maxBulletsPerEntry: 2
   maxBullets:
     howtowin: 1

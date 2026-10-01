@@ -1,25 +1,33 @@
-:root { color: #111; background: #e9e9e6; font: 10.5pt/1.35 "Libertinus Serif", "Linux Libertine", Georgia, serif; }
+@font-face { font-family: "Libertinus Serif"; src: local("Libertinus Serif"), url("/fonts/LibertinusSerif-Regular.otf"); font-weight: 400; font-style: normal; }
+@font-face { font-family: "Libertinus Serif"; src: local("Libertinus Serif Italic"), url("/fonts/LibertinusSerif-Italic.otf"); font-weight: 400; font-style: italic; }
+@font-face { font-family: "Libertinus Serif"; src: local("Libertinus Serif Bold"), url("/fonts/LibertinusSerif-Bold.otf"); font-weight: 700; font-style: normal; }
+@font-face { font-family: "Libertinus Serif"; src: local("Libertinus Serif Bold Italic"), url("/fonts/LibertinusSerif-BoldItalic.otf"); font-weight: 700; font-style: italic; }
+/* Sizes and spacing mirror resume_common.tex (11pt article, 0.45in margins, \small bullets). */
+:root { color: #111; background: #e9e9e6; font: 10.95pt/1.2 "Libertinus Serif", Georgia, serif; }
 body { margin: 0; padding: 2.5rem 0 6rem; }
 .variant-nav { position: fixed; top: 0.5rem; left: 0.5rem; display: flex; gap: 0.35rem; font: 12px system-ui, sans-serif; }
 .variant-nav a { padding: 0.2rem 0.5rem; border-radius: 4px; background: #fff; color: #333; text-decoration: none; }
 .variant-nav a[aria-current] { background: #111; color: #fff; }
-.page { box-sizing: border-box; width: 8.5in; min-height: 11in; margin: 0 auto; padding: 0.45in 0.5in; background: #fff; box-shadow: 0 1px 6px rgb(0 0 0 / 0.15); }
+.page { box-sizing: border-box; width: 8.5in; height: 11in; overflow: hidden; margin: 0 auto 0.35in; padding: 0.45in; background: #fff; box-shadow: 0 1px 6px rgb(0 0 0 / 0.15); }
+.page.measure { position: absolute; left: -10000px; top: 0; height: auto; overflow: visible; visibility: hidden; }
+.entry.continued { margin-top: 0; }
 header { text-align: center; }
-h1 { margin: 0; font-size: 1.75em; }
-.headline { margin: 0.1rem 0; font-weight: bold; font-size: 1.15em; }
-.contact { margin: 0.1rem 0 0; font-size: 0.9em; }
+h1 { margin: 0; font-size: 17.28pt; line-height: 1.2; }
+.headline { margin: 2pt 0 3pt; font-weight: bold; font-size: 12pt; }
+.contact { margin: 0; font-size: 10pt; }
 a { color: inherit; }
-h2 { margin: 0.55rem 0 0.2rem; border-bottom: 1px solid #111; font-size: 1.15em; font-variant: small-caps; }
-.entry { margin-top: 0.2rem; }
+h2 { margin: 7pt 0 3pt; border-bottom: 0.4pt solid #111; font-size: 12pt; font-variant: small-caps; }
+.entry { margin-top: 1pt; }
 .row { display: flex; justify-content: space-between; gap: 1rem; }
-.sub, .right, .note { font-size: 0.92em; }
+.sub, .right, .note { font-size: 10pt; }
 .right { font-style: italic; white-space: nowrap; }
 .stack { font-weight: normal; }
 .private { font-weight: normal; font-size: 0.85em; }
-ul { margin: 0.1rem 0 0; padding-left: 0.18in; list-style: "- "; }
-li { font-size: 0.92em; margin: 1px 0; }
-.skills { margin: 0; font-size: 0.92em; }
-@media print { :root { background: none; } body { padding: 0; } .variant-nav { display: none; } .page { box-shadow: none; } }
+ul { margin: 2pt 0 -2pt; padding-left: 0.18in; list-style: "- "; }  /* \resumeListEnd: \vspace{-2pt} */
+.entry-head { margin-bottom: -5pt; }  /* \resumeSubheading / \resumeProject end with \\[-5pt] */
+li { font-size: 10pt; line-height: 12pt; margin: 0 0 1pt; }
+.skills { margin: 0; font-size: 10pt; line-height: 12pt; }
+@media print { :root { background: none; } body { padding: 0; } .variant-nav { display: none; } .page { box-shadow: none; margin: 0; break-after: page; } .page.measure { display: none; } }
 li.status-narrowed { background: #fff6d6; }
 li.status-needs-nyx { background: #ffe3e0; }
 .badge { margin-left: 0.4em; padding: 0 0.3em; border-radius: 3px; background: #111; color: #fff; font: 9px system-ui, sans-serif; vertical-align: middle; }

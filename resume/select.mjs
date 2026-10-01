@@ -22,10 +22,15 @@ export function selectVariant(master, variants, key, { draft = false } = {}) {
       const entries = ordered(s.entries ?? [], v.order?.[s.id])
         .filter((e) => !e.hidden && !excluded.has(e.id))
         .map((e) => {
-          const bullets = ordered(e.bullets ?? [], v.bulletOrder?.[e.id])
-            .filter((b) => shown(b) && hit(b.families) && !excluded.has(b.id))
+          // An entry belongs to a variant when one of its bullets matches the variant's families.
+          // Its `lead` bullet (what the entry is) then always shows first, whatever its own families.
+          const visible = (e.bullets ?? []).filter((b) => shown(b) && !excluded.has(b.id));
+          const relevant = visible.some((b) => hit(b.families));
+          const bullets = ordered(visible, v.bulletOrder?.[e.id])
+            .sort((x, y) => Number(!!y.lead) - Number(!!x.lead))
+            .filter((b) => b.lead || hit(b.families))
             .slice(0, v.maxBullets?.[e.id] ?? v.maxBulletsPerEntry ?? Infinity);
-          return { ...e, bullets, keep: !(e.bullets ?? []).length || bullets.length > 0 };
+          return { ...e, bullets, keep: !(e.bullets ?? []).length || relevant };
         })
         .filter((e) => e.keep);
       return { ...s, entries };

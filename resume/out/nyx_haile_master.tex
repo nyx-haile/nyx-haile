@@ -77,7 +77,7 @@
 \resumeProject{\href{https://github.com/nyx-haile/howtowin.lol}{howtowin.lol} $\mid$ {\normalfont Python, PyTorch, CUDA, Redis}}{World model for post-game teaching}
 \resumeListStart
   \resumeItem{Designed a Dreamer-lineage RSSM world model for League of Legends combining static context, player priors and event sequences with outcome, next-event, next-frame and next-decision heads.}
-  \resumeItem{Trained the world model end to end on a 12.8k-game corpus, reaching outcome AUC@15 of 0.88 game-cold and 0.84 player-cold with a clean leak probe.}
+  \resumeItem{Trained the world model end to end on 12.8k games; at minute 15 it predicted the winner at 0.88 AUC on unseen matches and 0.84 on unseen players.}
   \resumeItem{Designed leakage-controlled evaluation over 51{,}000 games: a game-cold holdout split by match-ID hash and a player-cold holdout of every match played by 594 hash-selected players.}
   \resumeItem{Built a GPU kNN retrieval check over 1.16M anchor states x 544 dims to test whether world-model states cluster by outcome, against random, static and hand-crafted baselines.}
   \resumeItem{Built a Riot API collection pipeline with Redis work queues and 429-driven rate limiting, gathering 51{,}000 ranked games across 38 patches.}
@@ -92,12 +92,18 @@
   \resumeItem{Held top-10 positions on the scrimmage leaderboard in week 2.}
 \resumeListEnd
 
-\resumeProject{Neuro {\normalfont\small\textit{(private)}} $\mid$ {\normalfont Python, NumPy}}{Exploratory adaptive sparse neural core}
+\resumeProject{Adaptive Sparse Core {\normalfont\small\textit{(private)}} $\mid$ {\normalfont Python, NumPy}}{Self-rewiring sparse neural model}
 \resumeListStart
+  \resumeItem{Built a reusable sparse, self-rewiring neural model in Python with a create/train/predict API for classification and regression at any input and output size.}
   \resumeItem{Implemented temperature-controlled sampled activation, copula-driven rewiring, a loss-plus-sparsity objective and automatic pruning with edge rebalancing.}
   \resumeItem{Auto-scaled the graph to n log n nodes in input size with degree capped at log(graph size).}
   \resumeItem{Trained online on 60{,}000 MNIST samples with 4{,}431 auto-sized hidden nodes, reaching 84.2\% online accuracy in one epoch.}
+\resumeListEnd
+
+\resumeProject{Resource-Bounded Induction {\normalfont\small\textit{(private)}} $\mid$ {\normalfont Research note}}{Learning theory}
+\resumeListStart
   \resumeItem{Wrote a research note relating the model to resource-bounded, stream-based approximations of Solomonoff induction.}
+  \resumeItem{Proposed follow-on directions in explicit Bayesian inference over bounded hypothesis spaces, dovetailed hypothesis pruning and MDL-regularised correlation learning.}
 \resumeListEnd
 
 \resumeProject{\href{https://github.com/nyx-haile/sherlock}{Sherlock} $\mid$ {\normalfont Rust, Dolt}}{Token-usage forensics for agent CLIs}

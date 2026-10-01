@@ -50,6 +50,7 @@ sections:
         bullets:
           - id: partial-founded
             text: "Co-founded Partial, a prediction market that turns any relational analysis between assets into a tradable position."
+            lead: true
             families: [quant, swe-ml, hardware, founder]
             status: verified
             source: Nyx's description of the company (review comment 2026-10-01)
@@ -210,6 +211,7 @@ sections:
         bullets:
           - id: strand-core-system
             text: Built a federable, capability-authenticated issue tracker in Rust on FoundationDB, with line-level blame and content-addressed rationale.
+            lead: true
             families: [swe-ml, founder]
             status: verified
             source: ~/build/strand/README.md
@@ -249,6 +251,7 @@ sections:
         bullets:
           - id: forge-rust-control-plane
             text: Built a Rust daemon, operator CLI, Claude Code hooks and provider proxy that coordinate coding-agent work across multiple git repositories.
+            lead: true
             families: [swe-ml, founder]
             status: verified
             source: ~/build/forge/README.md
@@ -282,11 +285,12 @@ sections:
         bullets:
           - id: howtowin-rssm-design
             text: Designed a Dreamer-lineage RSSM world model for League of Legends combining static context, player priors and event sequences with outcome, next-event, next-frame and next-decision heads.
+            lead: true
             families: [swe-ml, quant]
             status: verified
             source: ~/build/howtowin.lol/README.md
           - id: howtowin-training-auc
-            text: "Trained the world model end to end on a 12.8k-game corpus, reaching outcome AUC@15 of 0.88 game-cold and 0.84 player-cold with a clean leak probe."
+            text: "Trained the world model end to end on 12.8k games; at minute 15 it predicted the winner at 0.88 AUC on unseen matches and 0.84 on unseen players."
             families: [swe-ml, quant]
             status: verified
             source: himalayas ~/ubuild/howtowin.lol/data/logs/plan_b_eval_APR_17.log (0.884/0.841, leak 0.531 vs <=0.55 target; 12,846 games); verified 2026-10-01
@@ -321,6 +325,7 @@ sections:
         bullets:
           - id: pokerbots-placement
             text: Built a Python bot for MIT Pokerbots' heads-up poker variant; the team placed about 15th of 70.
+            lead: true
             families: [quant, swe-ml]
             status: verified
             source: github.com/nyx-haile/pokerbots README
@@ -346,12 +351,18 @@ sections:
             source: github.com/nyx-haile/pokerbots README
 
       - id: neuro
-        title: Neuro
+        title: Adaptive Sparse Core
         visibility: private
         stack: Python, NumPy
-        right: Exploratory adaptive sparse neural core
+        right: Self-rewiring sparse neural model
         source: ~/build/neuro
         bullets:
+          - id: neuro-generic-api
+            text: Built a reusable sparse, self-rewiring neural model in Python with a create/train/predict API for classification and regression at any input and output size.
+            lead: true
+            families: [swe-ml, quant]
+            status: verified
+            source: ~/build/neuro/README.md (fact base, verified 2026-09-29)
           - id: neuro-mechanisms
             text: Implemented temperature-controlled sampled activation, copula-driven rewiring, a loss-plus-sparsity objective and automatic pruning with edge rebalancing.
             families: [swe-ml, quant]
@@ -367,11 +378,25 @@ sections:
             families: [swe-ml]
             status: verified
             source: ~/build/neuro (mnist_sparse_training.jsonl)
+
+      - id: induction-note
+        title: Resource-Bounded Induction
+        visibility: private
+        stack: Research note
+        right: Learning theory
+        source: ~/build/neuro/research.md
+        bullets:
           - id: neuro-solomonoff-research
             text: Wrote a research note relating the model to resource-bounded, stream-based approximations of Solomonoff induction.
+            lead: true
             families: [swe-ml, quant]
             status: verified
             source: ~/build/neuro/research.md
+          - id: neuro-research-directions
+            text: Proposed follow-on directions in explicit Bayesian inference over bounded hypothesis spaces, dovetailed hypothesis pruning and MDL-regularised correlation learning.
+            families: [swe-ml, quant]
+            status: verified
+            source: ~/build/neuro/research.md (fact base, verified 2026-09-29)
 
       - id: sherlock
         title: Sherlock
@@ -382,6 +407,7 @@ sections:
         bullets:
           - id: sherlock-attribution-reports
             text: Built a Rust CLI that ingests agent-CLI logs (Claude Code, Codex, Copilot), attributes token usage per session, and reports what burns tokens without adding value.
+            lead: true
             families: [swe-ml, founder]
             status: verified
             source: ~/build/sherlock/README.md
@@ -405,6 +431,7 @@ sections:
         bullets:
           - id: conch-pipeline
             text: Built a Rust voice-interview CLI that runs spoken Q&A over mic and TTS at three model depths and writes a persisted brief.
+            lead: true
             families: [swe-ml, founder]
             status: verified
             source: ~/build/conch/README.md
