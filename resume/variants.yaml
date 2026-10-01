@@ -32,7 +32,7 @@ hardware:
   order:
     experience: [keyholder, weiss, shed, partial-role, vana]
     projects: [conch, forge, strand, howtowin]
-  exclude: [neuro, sherlock, grimoire, astraia, pokerbots, skills-web, arkos-state-output]
+  exclude: [neuro, sherlock, grimoire, astraia, pokerbots, skills-web, arkos-state-output, howtowin]
   maxBulletsPerEntry: 2
 
 founder:

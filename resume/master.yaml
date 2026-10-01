@@ -141,16 +141,15 @@ sections:
         location: Cambridge, MA
         bullets:
           - id: shed-equipment-training
-            text: Helped onboard new SHED users through hands-on equipment training, covering laser-cutter materials and curing and post-processing of multi-material prints.
+            text: Ran weekly hands-on equipment trainings for SHED users from its opening, covering laser cutting and the curing and post-processing of multi-material 3D prints.
             families: [hardware]
-            status: needs-nyx
-            source: ~/private/resume/shed (May 2025 welcome email)
-            note: The email names you as able to help with training; confirm you ran sessions.
+            status: verified
+            source: Nyx, review comment 2026-10-01 ("ran them 1x/week basically since the shed opened"); ~/private/resume/shed (May 2025 welcome email)
           - id: shed-mentoring
             text: Mentored interdisciplinary student research in biocomputing, HCI and personal transportation, and trained lab staff on equipment and safety.
             families: [swe-ml, hardware, founder]
             status: needs-nyx
-            note: No source beyond the resumes; end date conflicts (Sept 2025 vs present).
+            hidden: true  # out of date (Nyx, 2026-10-01)
 
       - id: vana
         title: Vana
