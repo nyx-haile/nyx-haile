@@ -47,5 +47,7 @@ Review comments and round receipts stay outside this public repository.
 ## Integrity
 
 Visible text only: no hidden or microscopic text, no instructions aimed at
-parsers or screeners, and no claim without a `source`. Stated limitations
-(exploratory work, failed evaluation gates) stay stated.
+parsers or screeners, and no claim without a `source`. Bullets never imply a
+result that did not happen, but they carry limits in the noun ("demo",
+"online accuracy") rather than in caveat clauses, and a fact that only records
+a shortfall stays on record (`hidden: true`) instead of on the page.

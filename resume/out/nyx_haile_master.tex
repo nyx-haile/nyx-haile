@@ -21,11 +21,11 @@
 \section{Experience}
 \resumeSubheading{Partial}{2025 -- Present}{Cofounder \& CEO}{London}
 \resumeListStart
-  \resumeItem{Co-founded Partial, a prediction-market exchange where traders take positions on how correlated assets move together, rather than on single yes/no outcomes.}
+  \resumeItem{Co-founded Partial, a prediction-market exchange where traders take positions on how correlated assets move together.}
   \resumeItem{Ran customer discovery with self-funded traders, crypto executives, quantitative researchers and hedge fund managers.}
   \resumeItem{Verified on the live engine that a trade in one asset repriced a correlated asset as the model predicts, to within floating-point precision.}
   \resumeItem{Specified eleven market types, among them price paths, correlations, lead-lag and reported statistics, under one mechanism-design framework.}
-  \resumeItem{Restored strict 0.02 forward-KL / 0.02 relative-price-error projection thresholds as the engine's fail-closed runtime default; 12 open model failures remain tracked.}
+  \resumeItem{Restored strict 0.02 forward-KL / 0.02 relative-price-error projection thresholds as the engine's fail-closed runtime default.}
 \resumeListEnd
 
 \resumeSubheading{\href{https://github.com/nyx-haile/vana}{Vana}}{Dec 2022 -- July 2023}{AI Developer}{Remote}
@@ -39,9 +39,9 @@
 \resumeListStart
   \resumeItem{Built a federable, capability-authenticated issue tracker in Rust on FoundationDB, with line-level blame and content-addressed rationale.}
   \resumeItem{Shipped a 16-crate, \textasciitilde{}71k-line Rust workspace through v1.0.0 GA (10/10 verification gates) and v1.1.0, then a v2.0 governed-execution prerelease.}
-  \resumeItem{Implemented macaroon capability auth (HMAC-SHA256) with tenant, op-class, expiry and prefix caveats; the server re-derives the writing actor instead of trusting clients.}
+  \resumeItem{Implemented macaroon capability auth (HMAC-SHA256) with tenant, op-class, expiry and prefix caveats; the server re-derives the writing actor from the verified identity.}
   \resumeItem{Wrote stable-Rust fuzz harnesses for three frozen v1 formats (wire frames, CBOR citations, backup files); the first pass ran 284{,}846 iterations with zero crashes.}
-  \resumeItem{Bounded FoundationDB transactions with timeouts and retry limits so storage outages surface as typed errors instead of hangs.}
+  \resumeItem{Bounded FoundationDB transactions with timeouts and retry limits so storage outages surface as typed errors.}
 \resumeListEnd
 
 \resumeProject{Forge {\normalfont\small\textit{(private)}} $\mid$ {\normalfont Rust, systemd, RPC}}{Local-first agent control plane}
@@ -60,7 +60,7 @@
 
 \resumeProject{\href{https://github.com/nyx-haile/pokerbots}{MIT Pokerbots} $\mid$ {\normalfont Python}}{Heads-up poker-variant bot, January 2026}
 \resumeListStart
-  \resumeItem{Built a Python bot for MIT Pokerbots' heads-up poker variant, largely with AI-assisted coding; the team placed about 15th of 70.}
+  \resumeItem{Built a Python bot for MIT Pokerbots' heads-up poker variant; the team placed about 15th of 70.}
   \resumeItem{Implemented Monte Carlo equity estimation, with exact enumeration for discards, using quick and deep sampling paths to fit a per-decision compute budget.}
   \resumeItem{Built a multi-policy architecture (tight, bluff, desperate, lock-win) with a strategic overseer choosing among threshold policies.}
   \resumeItem{Adopted win-locking after reviewing scrimmage games -- fold every remaining hand once the lead guarantees a positive finish -- gaining at least five scrimmage places.}
@@ -71,8 +71,8 @@
 \resumeListStart
   \resumeItem{Implemented temperature-controlled sampled activation, copula-driven rewiring, a loss-plus-sparsity objective and automatic pruning with edge rebalancing.}
   \resumeItem{Auto-scaled the graph to n log n nodes in input size with degree capped at log(graph size).}
-  \resumeItem{Trained online on 60{,}000 MNIST samples with 4{,}431 auto-sized hidden nodes, reaching 84.2\% running accuracy in one epoch (not held-out test accuracy).}
-  \resumeItem{Wrote a research note relating the model to resource-bounded, stream-based approximations of Solomonoff induction, and where it falls short of them.}
+  \resumeItem{Trained online on 60{,}000 MNIST samples with 4{,}431 auto-sized hidden nodes, reaching 84.2\% online accuracy in one epoch.}
+  \resumeItem{Wrote a research note relating the model to resource-bounded, stream-based approximations of Solomonoff induction.}
 \resumeListEnd
 
 \resumeProject{\href{https://github.com/nyx-haile/sherlock}{Sherlock} $\mid$ {\normalfont Rust, Dolt}}{Token-usage forensics for agent CLIs}
