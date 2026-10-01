@@ -83,7 +83,7 @@ sections:
 
       - id: weiss
         title: Weiss Laboratory for Synthetic Biology, MIT
-        right: June 2025 -- ?
+        right: June 2025 -- Sept 2025  # end date confirmed by Nyx, 2026-10-01
         subtitle: Undergraduate Researcher (UROP)
         location: Cambridge, MA
         source: UROP proposal, 2025-04-15
@@ -92,7 +92,7 @@ sections:
             text: Scoped a summer 2025 project on vascularised liver organoids as the lab's 3D-printing point of contact, translating design requests into printable G-code.
             families: [hardware]
             status: needs-nyx
-            note: The proposal describes planned work; confirm what was done and the end date (Sept 2025 vs present).
+            note: The proposal describes planned work; confirm what was done.
           - id: weiss-vascular-prototypes
             text: Designed and tested cell-free 3D-printed prototype organoids with vascular channels allowing fluid flow into the core.
             families: [hardware]
