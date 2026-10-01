@@ -31,9 +31,9 @@ sections:
             source: ~/notes/internships (application notes)
           - id: mit-6566-project
             text: "Computer Systems Security (6.566) final project: a web server with WebAuthn login, script-injection protection, and payment-style secure transfers; about 2,000 lines."
-            families: [swe-ml, quant]
-            status: narrowed
-            source: ~/notes/internships (application notes)
+            families: []  # true but early coursework (Nyx, 2026-10-01): master record only, no tailored variant
+            status: verified
+            source: ~/notes/internships (application notes); confirmed by Nyx in review, 2026-10-01
 
   - id: experience
     title: Experience
