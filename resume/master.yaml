@@ -91,27 +91,47 @@ sections:
             source: ~/build/partial/docs/engine-projection-tolerance-evidence-2026-07-24.md (Nyx); wording trimmed in review, 2026-10-01
 
       - id: weiss
-        title: Weiss Laboratory for Synthetic Biology, MIT
-        right: June 2025 -- Sept 2025  # end date confirmed by Nyx, 2026-10-01
-        subtitle: Undergraduate Researcher (UROP)
+        title: Weiss Laboratory & The SHED, MIT
+        right: June 2025 -- Sept 2025
+        subtitle: Undergraduate Researcher (UROP), generative AI for vascularised liver tissue
         location: Cambridge, MA
-        source: UROP proposal, 2025-04-15
+        source: ~/private/resume/shed (2025 project emails, private); end date confirmed by Nyx 2026-10-01
         bullets:
+          - id: shed-fluidics-agent
+            text: "Built the fluidics-design AI agent and wrote the master prompt for a proof-of-concept multi-agent LLM workflow that generates complex vascular STL designs from plain-text specifications; co-inventor on the MIT invention disclosure."
+            families: [swe-ml, founder, hardware]
+            status: verified
+            source: ~/private/resume/shed (2025 project emails)
+          - id: shed-vascular-spec
+            text: "Wrote a parametric vascular-network generator specification covering stochastic branching, tapering, R-tree collision avoidance and a 0.99 diffusion-coverage loop, sized to a 100x68x38 mm bioprinter envelope."
+            families: [swe-ml, hardware, quant]
+            status: verified
+            source: ~/private/resume/shed (prompt specification attachment)
+          - id: shed-compute-proposal
+            text: "Authored a 10-page compute proposal specifying three workstation tiers ($5k, $10k, $35k) for multi-gigabyte mesh processing and 70B-parameter LLM training, with build-versus-buy and cloud-burst analysis."
+            families: [hardware, swe-ml, founder]
+            status: verified
+            source: ~/private/resume/shed (compute proposal attachment)
+          - id: shed-grant-poster
+            text: "Co-authored an accepted Biofabrication 2025 poster on generative AI for large-tissue fabrication and produced renderings for a liver-organoid seed-grant proposal."
+            families: [swe-ml, founder]
+            status: verified
+            source: ~/private/resume/shed (2025 project emails)
           - id: weiss-3d-printing-role
             text: Scoped a summer 2025 project on vascularised liver organoids as the lab's 3D-printing point of contact, translating design requests into printable G-code.
             families: [hardware]
             status: needs-nyx
-            note: The proposal describes planned work; confirm what was done.
+            note: Not in the 2025 emails; the project printer took STL files. Where does G-code come from?
           - id: weiss-vascular-prototypes
             text: Designed and tested cell-free 3D-printed prototype organoids with vascular channels allowing fluid flow into the core.
             families: [hardware]
             status: needs-nyx
-            note: Sourced only as a planned deliverable.
+            hidden: true  # emails show no prints as of Aug 2025 (superseded by shed-* bullets)
           - id: weiss-generative-design
             text: Built generative design pipelines for biologically constrained vascular microarchitectures using graph algorithms, spatial optimisation and formal constraints.
             families: [swe-ml]
             status: needs-nyx
-            note: On every current resume; no source found.
+            hidden: true  # superseded by shed-fluidics-agent and shed-vascular-spec (sourced)
 
       - id: shed
         title: The SHED, MIT
@@ -119,6 +139,12 @@ sections:
         subtitle: Research Mentor
         location: Cambridge, MA
         bullets:
+          - id: shed-equipment-training
+            text: Helped onboard new SHED users through hands-on equipment training, covering laser-cutter materials and curing and post-processing of multi-material prints.
+            families: [hardware]
+            status: needs-nyx
+            source: ~/private/resume/shed (May 2025 welcome email)
+            note: The email names you as able to help with training; confirm you ran sessions.
           - id: shed-mentoring
             text: Mentored interdisciplinary student research in biocomputing, HCI and personal transportation, and trained lab staff on equipment and safety.
             families: [swe-ml, hardware, founder]
