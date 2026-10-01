@@ -49,30 +49,30 @@ sections:
         source: ~/build/partial/docs/Vision.md
         bullets:
           - id: partial-founded
-            text: Co-founded Partial, a prediction-market exchange where traders take positions on how correlated assets move together.
+            text: "Co-founded Partial, a prediction market that turns any relational analysis between assets into a tradable position."
             families: [quant, swe-ml, hardware, founder]
             status: verified
-            source: ~/build/partial/docs/Vision.md
+            source: Nyx's description of the company (review comment 2026-10-01)
           - id: partial-customer-discovery
             text: Ran customer discovery with self-funded traders, crypto executives, quantitative researchers and hedge fund managers.
             families: [founder, quant]
             status: verified
             source: confirmed by Nyx in review, 2026-10-01; ~/private/partial/interviews
           - id: partial-outreach
-            text: Led the company's fundraising, building its investor narrative and pitching venture investors and accelerators.
+            text: "Built the company's investor narrative and pitched it to venture investors and accelerators."
             families: [founder]
-            status: needs-nyx
-            source: ~/private/partial/outreach (VC pitch 2026-09-22, advisor asks, accelerator cycle); reworded per review 2026-10-01
+            status: verified
+            source: ~/private/partial/outreach; reworded per review comment 2026-10-01 (no money raised)
           - id: partial-cross-asset-repricing
             text: Verified on the live engine that a trade in one asset repriced a correlated asset as the model predicts, to within floating-point precision.
             families: [founder, quant, swe-ml]
             status: verified
             source: ~/build/partial/docs/evidence/2026-09-17-live-venue-premise.md (Nyx); metric endorsed by Nyx in review, 2026-10-01
           - id: partial-engine-performance
-            text: Built the Rust pricing engine with my cofounder; it prices two-asset trades over ~200k-cell probability grids in 50-150 ms on a 2-CPU server.
+            text: "Built the Rust pricing engine, which prices two-asset trades over ~200k-cell probability grids in 50-150 ms on a 2-CPU server."
             families: [quant, swe-ml]
             status: verified
-            source: ~/build/partial/docs/engine-operation-benchmark-2026-07-23.md (benchmark by cofounder); framing confirmed by Nyx in review, 2026-10-01
+            source: ~/build/partial/docs/engine-operation-benchmark-2026-07-23.md; cofounder mention dropped per review comment 2026-10-01
           - id: partial-eleven-market-types
             text: Designed eleven new classes of tradable contract, from price paths and correlations to lead-lag and reported statistics, all under one pricing framework.
             families: [quant]
@@ -89,6 +89,7 @@ sections:
             families: [quant, swe-ml]
             status: verified
             source: ~/build/partial/docs/engine-projection-tolerance-evidence-2026-07-24.md (Nyx); wording trimmed in review, 2026-10-01
+            hidden: true  # production detail, not a CEO-level fact (Nyx, 2026-10-01)
 
       - id: weiss
         title: Weiss Laboratory & The SHED, MIT
@@ -103,10 +104,10 @@ sections:
             status: verified
             source: ~/private/resume/shed (2025 project emails)
           - id: shed-vascular-spec
-            text: "Wrote a parametric vascular-network generator specification covering stochastic branching, tapering, R-tree collision avoidance and a 0.99 diffusion-coverage loop, sized to a 100x68x38 mm bioprinter envelope."
+            text: "Wrote a parametric vascular-network generator specification for the Cellvivo bioreactor, covering stochastic branching, tapering, R-tree collision avoidance and a 0.99 diffusion-coverage loop."
             families: [swe-ml, hardware, quant]
             status: verified
-            source: ~/private/resume/shed (prompt specification attachment)
+            source: ~/private/resume/shed (prompt specification attachment); Cellvivo target per review comment 2026-10-01
           - id: shed-compute-proposal
             text: "Authored a 10-page compute proposal specifying three workstation tiers ($5k, $10k, $35k) for multi-gigabyte mesh processing and 70B-parameter LLM training, with build-versus-buy and cloud-burst analysis."
             families: [hardware, swe-ml, founder]
@@ -158,6 +159,11 @@ sections:
         location: Remote
         url: https://github.com/nyx-haile/vana
         bullets:
+          - id: vana-swift-client
+            text: "Shipped an iMessage sticker app in Swift on the Vana API, generating personalised stickers from users' AI portraits."
+            families: [swe-ml]
+            status: verified
+            source: confirmed by Nyx (review comment 2026-10-01); github.com/nyx-haile README (iMessage sticker app)
           - id: vana-sticker-prompts
             text: Engineered and iterated prompt templates for personalised AI-generated sticker portraits, tuning style and expression cues for identity retention and consistency.
             families: [swe-ml, founder]
@@ -173,11 +179,6 @@ sections:
             families: [founder, swe-ml]
             status: needs-nyx
             note: Only source is a one-line personal note.
-          - id: vana-swift-client
-            text: Shipped a Swift client for the Vana API.
-            families: [swe-ml]
-            status: needs-nyx
-            note: The public repo has only Python; no Swift or JavaScript found.
 
       - id: keyholder
         title: MITERS and MIT Radio Society
@@ -186,10 +187,10 @@ sections:
         location: Cambridge, MA
         bullets:
           - id: keyholder-ee
-            text: Keyholder at MITERS (student-run electronics and fabrication shop) and the MIT Radio Society; hands-on electronics and fabrication.
+            text: "Keyholder at MITERS, MIT's student-run electronics and fabrication shop, and at the MIT Radio Society."
             families: [hardware]
-            status: needs-nyx
-            note: Add dates and any concrete build (PCB, radio, robot).
+            status: verified
+            source: Nyx's own account (income-lane profile); reworded per review comment 2026-10-01
 
   - id: projects
     title: Selected Projects
