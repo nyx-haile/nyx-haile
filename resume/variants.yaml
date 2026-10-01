@@ -2,7 +2,6 @@
 master:
   headline: Systems & Research Engineer
   sections: [education, experience, projects, skills]
-  exclude: [mit-6566-project]  # true, kept on record, not resume-worthy (Nyx, 2026-10-01)
   maxPages: 2
 
 quant:

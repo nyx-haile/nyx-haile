@@ -2,7 +2,7 @@
 // draft=false (the PDF view) keeps only bullets whose status is `verified`.
 export function selectVariant(master, variants, key, { draft = false } = {}) {
   const v = variants[key] ?? variants.master;
-  const shown = (b) => draft || b.status === 'verified';
+  const shown = (b) => !b.hidden && (draft || b.status === 'verified');
   const fams = v.families ?? null;
   const excluded = new Set(v.exclude ?? []);
   const hit = (families) => !fams || (families ?? []).some((f) => fams.includes(f));

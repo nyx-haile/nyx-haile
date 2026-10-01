@@ -3,6 +3,7 @@
 #         narrowed  = a checker's narrower rewording of a refuted claim; not yet confirmed
 #         needs-nyx = a fact only Nyx can confirm (dates, roles, outcomes without a source)
 # PDFs include only verified bullets; the review page shows every status.
+# hidden: true keeps a confirmed fact on record without rendering it anywhere.
 
 person:
   name: Nyx Haile
@@ -31,7 +32,8 @@ sections:
             source: ~/notes/internships (application notes)
           - id: mit-6566-project
             text: "Computer Systems Security (6.566) final project: a web server with WebAuthn login, script-injection protection, and payment-style secure transfers; about 2,000 lines."
-            families: []  # true but early coursework (Nyx, 2026-10-01): on record only, in no PDF
+            families: [swe-ml, quant]
+            hidden: true  # true but early coursework (Nyx, 2026-10-01)
             status: verified
             source: ~/notes/internships (application notes); confirmed by Nyx in review, 2026-10-01
 
@@ -46,40 +48,49 @@ sections:
         location: London
         source: ~/build/partial/docs/Vision.md
         bullets:
-          - id: partial-joint-distribution-exchange
-            text: Designed a perpetual prediction-market exchange where positions are probability distributions over joint price paths across correlated assets, not binary outcomes.
-            families: [quant, founder]
+          - id: partial-founded
+            text: Co-founded Partial, a prediction-market exchange where traders take positions on how correlated assets move together, rather than on single yes/no outcomes.
+            families: [quant, swe-ml, hardware, founder]
             status: verified
             source: ~/build/partial/docs/Vision.md
+          - id: partial-customer-discovery
+            text: Ran discovery conversations with traders, a former systematic-fund quant, and derivatives and compliance veterans, which pointed the first customer at quantitative researchers who want to trade their own models.
+            families: [founder, quant]
+            status: needs-nyx
+            source: ~/private/partial/interviews (aggregated; no names)
+            note: Drafted from four interview notes; give the real number of conversations if it is higher.
+          - id: partial-outreach
+            text: Led advisor and investor outreach and wrote the pitch materials, from a 30-second pitch to a 30-minute walkthrough.
+            families: [founder]
+            status: needs-nyx
+            source: ~/private/partial/outreach; ~/build/partial/docs/public/pitch_versions.md
+          - id: partial-cross-asset-repricing
+            text: Verified on the live engine that a trade in one asset repriced a correlated asset as the model predicts, to within floating-point precision.
+            families: [founder, quant, swe-ml]
+            status: verified
+            source: ~/build/partial/docs/evidence/2026-09-17-live-venue-premise.md (Nyx); metric endorsed by Nyx in review, 2026-10-01
+          - id: partial-engine-performance
+            text: Co-built the Rust pricing engine with my cofounder; it prices two-asset trades over ~200k-cell probability grids in 50-150 ms on a 2-CPU server.
+            families: [quant, swe-ml]
+            status: needs-nyx
+            source: ~/build/partial/docs/engine-operation-benchmark-2026-07-23.md (benchmark by cofounder)
+            note: The benchmark and the optimisation it measures were committed by your cofounder; confirm "co-built" is how you want it framed.
           - id: partial-eleven-market-types
-            text: Specified eleven market types, among them price paths, derived statistics (correlations, lead-lag) and reported statistics, under a single mechanism-design framework.
-            families: [quant, founder]
+            text: Specified eleven market types, among them price paths, correlations, lead-lag and reported statistics, under one mechanism-design framework.
+            families: [quant]
             status: verified
             source: ~/build/partial/docs/Vision.md
           - id: partial-exponential-family-amm
             text: Designed the market maker on the log-partition (cost) function of an exponential family, following Abernethy et al., so no-arbitrage, bounded market-maker loss and proper scoring follow from the construction.
             families: [quant]
             status: narrowed
+            hidden: true  # too technical for the resume (Nyx, 2026-10-01)
             source: ~/build/partial/docs/Vision.md
-          - id: partial-engine-latency-benchmark
-            text: "Benchmarked the Rust pricing engine end to end (loopback HTTP + PostgreSQL, local): binary quotes 8-9 ms p50; two-asset joint quotes on ~200k-cell grids 54-149 ms p50."
-            families: [quant, swe-ml]
-            status: narrowed
-            source: ~/build/partial/docs/engine-operation-benchmark-2026-07-23.md
-          - id: partial-cross-asset-repricing
-            text: Verified on a running engine that BTC-only trades repriced ETH as the Gaussian conditional predicts (residual about -2e-12), and a 1-sigma BTC binary matched Phi(-1) to seven decimals.
-            families: [quant, swe-ml]
-            status: narrowed
-            source: ~/build/partial/docs/engine-operation-benchmark-2026-07-23.md
           - id: partial-fail-closed-tolerances
-            text: Restored strict 0.02 forward-KL / 0.02 relative-price-error projection thresholds as the engine's fail-closed runtime default, keeping looser bounds for diagnostics only; 12 open model failures remain tracked.
+            text: Restored strict 0.02 forward-KL / 0.02 relative-price-error projection thresholds as the engine's fail-closed runtime default; 12 open model failures remain tracked.
             families: [quant, swe-ml]
             status: verified
-            source: ~/build/partial (engine docs)
-          - id: partial-customer-discovery
-            text: Ran customer discovery with analysts, BI practitioners and quantitative researchers.
-            families: [founder]
-            status: needs-nyx
+            source: ~/build/partial/docs/engine-projection-tolerance-evidence-2026-07-24.md (Nyx); wording trimmed in review, 2026-10-01
 
       - id: weiss
         title: Weiss Laboratory for Synthetic Biology, MIT
