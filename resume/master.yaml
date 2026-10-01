@@ -181,9 +181,9 @@ sections:
             note: Only source is a one-line personal note.
 
       - id: keyholder
-        title: MITERS and MIT Radio Society
-        right: ""
-        subtitle: Keyholder
+        title: MITERS, MIT Radio Society & SIPB
+        right: Sept 2021 -- Present  # confirmed by Nyx, 2026-10-01
+        subtitle: Keyholder (MITERS, Radio Society); SIPB member
         location: Cambridge, MA
         bullets:
           - id: keyholder-ee
@@ -191,6 +191,11 @@ sections:
             families: [hardware]
             status: verified
             source: Nyx's own account (income-lane profile); reworded per review comment 2026-10-01
+          - id: arkos-state-output
+            text: Contributed to arkOS, SIPB's self-hosted AI assistant, introducing a typed StateOutput model that its agent state machine returns and consumes.
+            families: [swe-ml]
+            status: verified
+            source: ~/build/arkos commits 7be4a33, 139f741, 9a3f9c0
 
   - id: projects
     title: Selected Projects

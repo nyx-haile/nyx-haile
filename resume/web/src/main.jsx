@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import { createRoot } from 'react-dom/client';
 import { Agentation } from 'agentation';
 import { master, variants } from 'virtual:resume';
@@ -13,9 +14,28 @@ const key = params.get('v') ?? 'master';
 const draft = params.get('draft') !== '0';
 const view = selectVariant(master, variants, key, { draft });
 
+// Edits arrive while the reviewer may be mid-annotation, so never reload under
+// the cursor: show a button and let the reviewer reload when ready.
+function UpdateBanner() {
+  const [stale, setStale] = useState(false);
+  useEffect(() => {
+    if (!import.meta.hot) return;
+    const onUpdate = () => setStale(true);
+    import.meta.hot.on('resume:updated', onUpdate);
+    return () => import.meta.hot.off?.('resume:updated', onUpdate);
+  }, []);
+  if (!stale) return null;
+  return (
+    <button className="update-banner" data-review-ignore onClick={() => location.reload()}>
+      Resume updated, reload
+    </button>
+  );
+}
+
 function App() {
   return (
     <>
+      <UpdateBanner />
       <nav className="variant-nav" data-review-ignore>
         {Object.keys(variants).map((k) => (
           <a key={k} href={`?v=${k}${draft ? '' : '&draft=0'}`} aria-current={k === view.key ? 'page' : undefined}>{k}</a>

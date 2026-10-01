@@ -25,3 +25,5 @@ li.status-needs-nyx { background: #ffe3e0; }
 .badge { margin-left: 0.4em; padding: 0 0.3em; border-radius: 3px; background: #111; color: #fff; font: 9px system-ui, sans-serif; vertical-align: middle; }
 .variant-nav .toggle { margin-left: 0.75rem; background: #fff6d6; }
 @media print { li.status-narrowed, li.status-needs-nyx { background: none; } .badge { display: none; } }
+.update-banner { position: fixed; top: 0.5rem; right: 0.5rem; z-index: 10; padding: 0.35rem 0.7rem; border: 0; border-radius: 4px; background: #111; color: #fff; font: 12px system-ui, sans-serif; cursor: pointer; }
+@media print { .update-banner { display: none; } }

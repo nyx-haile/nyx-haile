@@ -22,7 +22,7 @@ function resumeData() {
     handleHotUpdate({ file, server }) {
       if (!SOURCES.includes(file)) return;
       server.moduleGraph.invalidateModule(server.moduleGraph.getModuleById(id));
-      server.ws.send({ type: 'full-reload' });
+      server.ws.send({ type: 'custom', event: 'resume:updated' });
       return [];
     },
   };
