@@ -20,7 +20,7 @@ export function selectVariant(master, variants, key, { draft = false } = {}) {
         return { ...s, lines: (s.lines ?? []).filter((l) => hit(l.families) && !excluded.has(l.id)) };
       }
       const entries = ordered(s.entries ?? [], v.order?.[s.id])
-        .filter((e) => !excluded.has(e.id))
+        .filter((e) => !e.hidden && !excluded.has(e.id))
         .map((e) => {
           const bullets = ordered(e.bullets ?? [], v.bulletOrder?.[e.id])
             .filter((b) => shown(b) && hit(b.families) && !excluded.has(b.id))

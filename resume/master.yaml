@@ -428,6 +428,7 @@ sections:
             source: ~/build/grimoire/README.md
 
       - id: astraia
+        hidden: true  # dropped as a project (Nyx, 2026-10-01)
         title: Astraia
         visibility: private
         stack: TypeScript, Python, SQLite
