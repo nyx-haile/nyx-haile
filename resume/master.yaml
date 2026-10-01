@@ -20,20 +20,15 @@ sections:
       - id: mit
         title: Massachusetts Institute of Technology
         right: "2026"
-        subtitle: B.S. Computer Science, B.S. Mathematics
+        subtitle: B.S. Computer Science, B.S. Mathematics, Minor in Economics
         location: Cambridge, MA
-        source: ~/notes/internships (application notes)
+        source: ~/notes/internships (application notes); Economics minor confirmed by Nyx in review, 2026-10-01
         bullets:
           - id: mit-coursework
             text: "Coursework: algorithms, theory of computation, computer systems security, cryptography, statistics."
             families: [quant, swe-ml, hardware, founder]
             status: verified
             source: ~/notes/internships (application notes)
-          - id: mit-econ-minor
-            text: Minor in Economics.
-            families: [quant, swe-ml, hardware, founder]
-            status: needs-nyx
-            note: Appears on every resume but in no other source.
           - id: mit-6566-project
             text: "Computer Systems Security (6.566) final project: a web server with WebAuthn login, script-injection protection, and payment-style secure transfers; about 2,000 lines."
             families: [swe-ml, quant]
