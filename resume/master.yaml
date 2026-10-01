@@ -174,10 +174,10 @@ sections:
             status: narrowed
             source: github.com/nyx-haile/vana prompt.py
           - id: vana-hackathon
-            text: Organised the $25K Vana x MIT Generative AI Hackathon end to end -- logistics, outreach and judging.
+            text: Helped organise the $25K Vana x MIT Generative AI Hackathon.
             families: [founder, swe-ml]
-            status: needs-nyx
-            note: Only source is a one-line personal note.
+            status: verified
+            source: Nyx, review comment 2026-10-01 ("helped organise ... mostly support"); prize figure from earlier resumes
 
       - id: keyholder
         title: MITERS, MIT Radio Society & SIPB
