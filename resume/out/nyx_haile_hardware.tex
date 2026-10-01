@@ -59,7 +59,7 @@
 \resumeProject{\href{https://github.com/nyx-haile/howtowin.lol}{howtowin.lol} $\mid$ {\normalfont Python, PyTorch, CUDA, Redis}}{World model for post-game teaching}
 \resumeListStart
   \resumeItem{Designed a Dreamer-lineage RSSM world model for League of Legends combining static context, player priors and event sequences with outcome, next-event, next-frame and next-decision heads.}
-  \resumeItem{Built a GPU kNN retrieval check over \textasciitilde{}1.16M anchor states x 544 dims to test whether world-model states cluster by outcome, against random, static and hand-crafted baselines.}
+  \resumeItem{Trained the world model end to end on a 12.8k-game corpus, reaching outcome AUC@15 of 0.88 game-cold and 0.84 player-cold with a clean leak probe.}
 \resumeListEnd
 
 \section{Technical Skills}

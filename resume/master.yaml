@@ -280,20 +280,20 @@ sections:
             status: verified
             source: ~/build/howtowin.lol/README.md
           - id: howtowin-training-auc
-            text: Trained end to end on 12.8k-game and 51k-game corpora, reaching outcome AUC@15 of 0.88 game-cold and 0.84 player-cold with a clean leak probe.
+            text: "Trained the world model end to end on a 12.8k-game corpus, reaching outcome AUC@15 of 0.88 game-cold and 0.84 player-cold with a clean leak probe."
             families: [swe-ml, quant]
-            status: narrowed
-            source: ~/build/howtowin.lol/README.md
+            status: verified
+            source: himalayas ~/ubuild/howtowin.lol/data/logs/plan_b_eval_APR_17.log (0.884/0.841, leak 0.531 vs <=0.55 target; 12,846 games); verified 2026-10-01
           - id: howtowin-leakage-holdouts
-            text: Designed leakage-controlled evaluation with a game-cold holdout split by match-ID hash and a player-cold holdout that keeps a hash-selected set of players out of training.
+            text: "Designed leakage-controlled evaluation over 51,000 games: a game-cold holdout split by match-ID hash and a player-cold holdout of every match played by 594 hash-selected players."
             families: [swe-ml, quant]
-            status: narrowed
-            source: ~/build/howtowin.lol/README.md
+            status: verified
+            source: code/model/cold_holdout.py; himalayas ~/ubuild/howtowin.lol/data/logs/splits_rebuild_2026-04-24.log (game_cold 4,581, player_cold 5,108 / 594 puuids); verified 2026-10-01
           - id: howtowin-retrieval-index
-            text: Built a GPU kNN retrieval check over ~1.16M anchor states x 544 dims to test whether world-model states cluster by outcome, against random, static and hand-crafted baselines.
+            text: "Built a GPU kNN retrieval check over 1.16M anchor states x 544 dims to test whether world-model states cluster by outcome, against random, static and hand-crafted baselines."
             families: [swe-ml]
             status: verified
-            source: ~/build/howtowin.lol/README.md
+            source: himalayas ~/ubuild/howtowin.lol/logs/m4_baselines_build_2026-04-27.log (1,162,118 rows), m4_retrieval_eval_2026-04-29.log (544-dim keys, cuda); verified 2026-10-01
           - id: howtowin-retrieval-gate-honest
             text: The retrieval model narrowly missed its 0.7-bit gate at k=64 (about 0.698 bits game-cold) and trails a hand-crafted feature baseline by about 0.10 bits.
             families: [swe-ml, quant]
@@ -301,10 +301,10 @@ sections:
             hidden: true  # shortfall-only bullet; on record (caveat sweep, 2026-10-01)
             source: ~/build/howtowin.lol/README.md
           - id: howtowin-data-pipeline
-            text: Built a Riot API match-collection pipeline with Redis work queues and 429-driven rate limiting.
+            text: "Built a Riot API collection pipeline with Redis work queues and 429-driven rate limiting, gathering 51,000 ranked games across 38 patches."
             families: [swe-ml]
-            status: narrowed
-            source: ~/build/howtowin.lol/code/redis_init.py
+            status: verified
+            source: code/fetch.py, code/redis_init.py; himalayas ~/ubuild/howtowin.lol/data/howtowin.db (51,000 games, read-only count); verified 2026-10-01
 
       - id: pokerbots
         title: MIT Pokerbots

@@ -43,3 +43,5 @@ founder:
     projects: [strand, forge, astraia, howtowin, pokerbots, sherlock, conch]
   exclude: [neuro, grimoire, conch]
   maxBulletsPerEntry: 2
+  maxBullets:
+    howtowin: 1
