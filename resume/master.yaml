@@ -380,6 +380,7 @@ sections:
             source: ~/build/neuro (mnist_sparse_training.jsonl)
 
       - id: induction-note
+        hidden: true  # not that relevant (Nyx, 2026-10-07)
         title: Resource-Bounded Induction
         visibility: private
         stack: Research note
