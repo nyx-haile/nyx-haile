@@ -70,10 +70,10 @@ sections:
             status: verified
             source: ~/build/partial/docs/evidence/2026-09-17-live-venue-premise.md (Nyx); metric endorsed by Nyx in review, 2026-10-01
           - id: partial-engine-performance
-            text: "Built the Rust pricing engine, which prices two-asset trades over ~200k-cell probability grids in 50-150 ms on a 2-CPU server."
+            text: Built Partial's Rust pricing engines, which assemble any contract from Boolean combinations of a few simpler contracts.
             families: [quant, swe-ml]
             status: verified
-            source: ~/build/partial/docs/engine-operation-benchmark-2026-07-23.md; cofounder mention dropped per review comment 2026-10-01
+            source: Nyx, 2026-10-07 (engines' purpose; hardware-bound contract counts left off); engine trunks gen1-gen3 in ~/build/partial
           - id: partial-eleven-market-types
             text: Designed eleven new classes of tradable contract, from price paths and correlations to lead-lag and reported statistics, all under one pricing framework.
             families: [quant]
