@@ -12,7 +12,7 @@
 \end{center}
 
 \section{Education}
-\resumeSubheading{Massachusetts Institute of Technology}{2026}{B.S. Computer Science, B.S. Mathematics, Minor in Economics}{Cambridge, MA}
+\resumeSubheading{Massachusetts Institute of Technology}{May 2026}{B.S. Mathematics, Minor in Economics}{Cambridge, MA}
 \resumeListStart
   \resumeItem{Coursework: algorithms, theory of computation, computer systems security, cryptography, statistics.}
 \resumeListEnd
@@ -36,7 +36,7 @@
   \resumeItem{Co-authored an accepted Biofabrication 2025 poster on generative AI for large-tissue fabrication and produced renderings for a liver-organoid seed-grant proposal.}
 \resumeListEnd
 
-\resumeSubheading{The SHED, MIT}{Sept 2023 -- ?}{Research Mentor}{Cambridge, MA}
+\resumeSubheading{The SHED, MIT}{Sept 2023 -- Sept 2025}{Research Mentor}{Cambridge, MA}
 \resumeListStart
   \resumeItem{Ran weekly hands-on equipment trainings for SHED users from its opening, covering laser cutting and the curing and post-processing of multi-material 3D prints.}
 \resumeListEnd
@@ -73,10 +73,10 @@
   \resumeItem{Ran the daemon under systemd with NoNewPrivileges, ProtectSystem=strict and a read-only home, confining writes to its own state directories.}
 \resumeListEnd
 
-\resumeProject{\href{https://github.com/nyx-haile/howtowin.lol}{howtowin.lol} $\mid$ {\normalfont Python, PyTorch, CUDA, Redis}}{World model for post-game teaching}
+\resumeProject{\href{https://github.com/nyx-haile/howtowin.lol}{howtowin.lol} $\mid$ {\normalfont Python, PyTorch, CUDA, Redis}}{Sequence model for post-game analysis}
 \resumeListStart
-  \resumeItem{Designed a Dreamer-lineage RSSM world model for League of Legends combining static context, player priors and event sequences with outcome, next-event, next-frame and next-decision heads.}
-  \resumeItem{Trained the world model end to end on 12.8k games; at minute 15 it predicted the winner at 0.88 AUC on unseen matches and 0.84 on unseen players.}
+  \resumeItem{Designed a Dreamer-lineage RSSM sequence model for League of Legends combining static context, player priors and event sequences with outcome, next-event, next-frame and next-decision heads.}
+  \resumeItem{Trained the model end to end on 12.8k games; at minute 15 it predicted the winner at 0.88 AUC on unseen matches and 0.84 on unseen players.}
   \resumeItem{Designed leakage-controlled evaluation over 51{,}000 games: a game-cold holdout split by match-ID hash and a player-cold holdout of every match played by 594 hash-selected players.}
   \resumeItem{Built a GPU kNN retrieval check over 1.16M anchor states x 544 dims to test whether world-model states cluster by outcome, against random, static and hand-crafted baselines.}
   \resumeItem{Built a Riot API collection pipeline with Redis work queues and 429-driven rate limiting, gathering 51{,}000 ranked games across 38 patches.}

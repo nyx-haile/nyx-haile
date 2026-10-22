@@ -20,10 +20,10 @@ sections:
     entries:
       - id: mit
         title: Massachusetts Institute of Technology
-        right: "2026"
-        subtitle: B.S. Computer Science, B.S. Mathematics, Minor in Economics
+        right: May 2026
+        subtitle: B.S. Mathematics, Minor in Economics
         location: Cambridge, MA
-        source: ~/notes/internships (application notes); Economics minor confirmed by Nyx in review, 2026-10-01
+        source: ~/notes/internships (application notes); Economics minor confirmed by Nyx in review, 2026-10-01; graduated May 2026 with a Mathematics major only (no Computer Science degree), Nyx 2026-10-20
         bullets:
           - id: mit-coursework
             text: "Coursework: algorithms, theory of computation, computer systems security, cryptography, statistics."
@@ -137,7 +137,7 @@ sections:
 
       - id: shed
         title: The SHED, MIT
-        right: Sept 2023 -- ?
+        right: Sept 2023 -- Sept 2025  # ended with the Weiss Lab project (Nyx, 2026-10-22)
         subtitle: Research Mentor
         location: Cambridge, MA
         bullets:
@@ -280,17 +280,17 @@ sections:
         title: howtowin.lol
         url: https://github.com/nyx-haile/howtowin.lol
         stack: Python, PyTorch, CUDA, Redis
-        right: World model for post-game teaching
+        right: Sequence model for post-game analysis
         source: ~/build/howtowin.lol/README.md
         bullets:
           - id: howtowin-rssm-design
-            text: Designed a Dreamer-lineage RSSM world model for League of Legends combining static context, player priors and event sequences with outcome, next-event, next-frame and next-decision heads.
+            text: Designed a Dreamer-lineage RSSM sequence model for League of Legends combining static context, player priors and event sequences with outcome, next-event, next-frame and next-decision heads.
             lead: true
             families: [swe-ml, quant]
             status: verified
             source: ~/build/howtowin.lol/README.md
           - id: howtowin-training-auc
-            text: "Trained the world model end to end on 12.8k games; at minute 15 it predicted the winner at 0.88 AUC on unseen matches and 0.84 on unseen players."
+            text: "Trained the model end to end on 12.8k games; at minute 15 it predicted the winner at 0.88 AUC on unseen matches and 0.84 on unseen players."
             families: [swe-ml, quant]
             status: verified
             source: himalayas ~/ubuild/howtowin.lol/data/logs/plan_b_eval_APR_17.log (0.884/0.841, leak 0.531 vs <=0.55 target; 12,846 games); verified 2026-10-01
