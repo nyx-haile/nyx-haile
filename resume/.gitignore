@@ -1,0 +1,5 @@
+node_modules/
+out/*
+!out/*.tex
+!out/*.pdf
+out/resume_common.tex

@@ -1,0 +1,41 @@
+% Shared formatting for the three derivative resumes in this directory.
+% The source resumes in the repository root are intentionally untouched.
+\usepackage{cmap}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{libertinus}
+\usepackage[empty]{fullpage}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+\usepackage{xcolor}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\tabcolsep}{0pt}
+\addtolength{\oddsidemargin}{-0.55in}
+\addtolength{\evensidemargin}{-0.55in}
+\addtolength{\textwidth}{1.1in}
+\addtolength{\topmargin}{-0.55in}
+\addtolength{\textheight}{1.1in}
+\urlstyle{same}
+\raggedright
+\raggedbottom
+\color{black}
+\input{glyphtounicode}
+\pdfgentounicode=1
+
+\titleformat{\section}{\large\bfseries\scshape}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{7pt}{3pt}
+
+\newcommand{\resumeItem}[1]{\item\small{#1}}
+\newcommand{\resumeSubheading}[4]{%
+  \vspace{1pt}\textbf{#1} \hfill #2\\
+  {\small\textit{#3}} \hfill {\small\textit{#4}}\\[-5pt]
+}
+\newcommand{\resumeProject}[2]{%
+  \vspace{1pt}\textbf{#1} \hfill {\small\textit{#2}}\\[-5pt]
+}
+\newcommand{\resumeListStart}{\begin{itemize}[label={-},leftmargin=0.18in,itemsep=1pt,topsep=2pt,parsep=0pt,partopsep=0pt]}
+\newcommand{\resumeListEnd}{\end{itemize}\vspace{-2pt}}
+
