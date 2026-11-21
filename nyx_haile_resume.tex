@@ -124,37 +124,34 @@
 \section{Experience}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Research Mentor}{September 2023 -- Present}
-      {The SHED}{Cambridge, MA}
+      {Cofounder \& CEO}{2025 -- Present}
+      {Partial}{London}
       \resumeItemListStart
-        \resumeItem{Served as a key mentor in a cutting-edge, interdisciplinary makerspace, guiding research projects at the intersection of biocomputing, human-computer interaction (HCI), and personal transportation.}
-        \resumeItem{Provided comprehensive technical training to laboratory staff on advanced equipment, ensuring compliance with safety protocols and optimizing experimental outcomes.}
-        \resumeItem{Spearheaded the design and execution of innovative research methodologies, employing data-driven decision-making to solve challenges in increasing makerspace access}
-        \resumeItem{Collaborated with interdisciplinary teams to advance research in computational models, machine learning applications, and data analytics, supporting the integration of quantitative techniques in experimental workflows.}
+        \resumeItem{Co-founded Partial, a prediction market that turns any relational analysis between assets into a tradable position.}
+        \resumeItem{Launched Partial's live public paper exchange on 19 October 2026, with BTC and ETH markets.}
+        \resumeItem{Built Partial's Rust pricing engines, which assemble any contract from Boolean combinations of a few simpler contracts.}
+        \resumeItem{Designed eleven new classes of tradable contract, from price paths and correlations to lead-lag and reported statistics, all under one pricing framework.}
+        \resumeItem{Verified on the live engine that a trade in one asset repriced a correlated asset as the model predicts, to within floating-point precision.}
+        \resumeItem{Ran customer discovery with self-funded traders, crypto executives, quantitative researchers and hedge fund managers, and pitched the company to venture investors and accelerators.}
       \resumeItemListEnd
 
     \resumeSubheading
-      {Undergraduate Researcher}{June 2025 -- Present}
-      {Weiss Laboratory for Synthetic Biology}{Cambridge, MA}
+      {Undergraduate Researcher (UROP)}{June 2025 -- September 2025}
+      {Weiss Laboratory \& The SHED, MIT}{Cambridge, MA}
       \resumeItemListStart
-        \resumeItem{Applied theoretical computer science techniques—including graph algorithms, spatial optimisation, and formal constraint modelling—to develop a generative design pipeline for biologically constrained microarchitectures.}
-        \resumeItem{Integrated AI-based prompting with classical algorithmic tools to synthesise spatially feasible geometries under physical and physiological constraints, enabling rapid and adaptable iteration.}
-        \resumeItem{Designed custom validation metrics and refinement algorithms grounded in discrete geometry and computational topology to ensure manufacturability and biological viability.}
-        \resumeItem{Bridged computational design with experimental workflows by contributing to high-throughput analysis pipelines, including sequencing, imaging, and real-time control system interfacing.}
-        \resumeItem{Designed and managed high-performance computing infrastructure to support LLM-assisted vascular mesh generation, including workstation configuration, benchmarking, and cross-platform STL validation for experimental export.}
+        \resumeItem{Built the fluidics-design AI agent and wrote the master prompt for a proof-of-concept multi-agent LLM workflow that generates complex vascular STL designs from plain-text specifications; co-inventor on the MIT invention disclosure.}
+        \resumeItem{Wrote a parametric vascular-network generator specification for the Cellvivo bioreactor, covering stochastic branching, tapering, R-tree collision avoidance and a 0.99 diffusion-coverage loop.}
+        \resumeItem{Authored a 10-page compute proposal specifying three workstation tiers (\$5k, \$10k, \$35k) for multi-gigabyte mesh processing and 70B-parameter LLM training, with build-versus-buy and cloud-burst analysis.}
+        \resumeItem{Co-authored an accepted Biofabrication 2025 poster on generative AI for large-tissue fabrication and produced renderings for a liver-organoid seed-grant proposal.}
       \resumeItemListEnd
-    
+
     \resumeSubheading
-        {AI Developer}{December 2022 -- July 2023}{Vana}{Remote}
-        \resumeItemListStart
-            \resumeItem{Organized the Vana X MIT Generative AI Hackathon, managing a \$25,000 prize pool and coordinating logistics, outreach, and judging criteria, resulting in the participation of top-tier talent from the MIT community.}
-            \resumeItem{Designed, developed, and rigorously tested a robust framework for hackathon participants, leveraging JavaScript and Python to create an efficient and scalable platform for generative AI development.}
-            \resumeItem{Created a messaging applet in Swift utilizing the Vana API, integrating user-friendly functionalities while ensuring seamless interaction between backend and frontend components.}
-            \resumeItemListEnd
+      {AI Developer}{December 2022 -- July 2023}
+      {Vana}{Remote}
+      \resumeItemListStart
+        \resumeItem{Built Swift Messages-extension UI components for an iMessage sticker app that generated stickers through the Vana API (prototype).}
+      \resumeItemListEnd
 
-
-    
-    
     % \resumeSubheading
     %   {Tech Lead}{December 2021 -- April 2022}
     %   {Bluehour}{Cambridge, MA}
@@ -180,11 +177,12 @@
       %     \resumeItemListEnd
           
       \resumeProjectHeading
-          {\textbf{Howtowin.lol} $|$ \emph{Python, Redis, Svelte, OLAP DB}}{July 2024-- Present}
+          {\textbf{\href{https://github.com/nyx-haile/howtowin.lol}{\underline{howtowin.lol}}} $|$ \emph{Python, PyTorch, CUDA, Redis}}{July 2024 -- Present}
           \resumeItemListStart
-            \resumeItem{Developing a vector matching algorithm to identify and compare gameplay metrics with similar past matches.}
-            \resumeItem{Building a website in Svelte to display data and manage user logins,}
-            \resumeItem{Designing data visualization tools to present insights and recommendations to users effectively}
+            \resumeItem{Designed a Dreamer-lineage RSSM sequence model for League of Legends combining static context, player priors and event sequences with outcome, next-event, next-frame and next-decision heads.}
+            \resumeItem{Trained the model end to end on 12.8k games; at minute 15 it predicted the winner at 0.88 AUC on unseen matches and 0.84 on unseen players.}
+            \resumeItem{Built a Riot API collection pipeline with Redis work queues and 429-driven rate limiting, gathering 51{,}000 ranked games across 38 patches.}
+            \resumeItem{Designed leakage-controlled evaluation over 51{,}000 games: a game-cold holdout split by match-ID hash and a player-cold holdout of every match played by 594 hash-selected players.}
           \resumeItemListEnd
     \resumeSubHeadingListEnd
 
@@ -194,7 +192,7 @@
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.1625in, label={}]
     \small{\item{
-     \textbf{Languages}{: JavaScript, Python, C/C++/C\#, SQL (Postgres), Redis, HTML/CSS, } \\
+     \textbf{Languages}{: JavaScript, Python, C/C++, SQL (Postgres), Redis, HTML/CSS, } \\
      \textbf{Frameworks}{: React, Node.js, Svelte, Flask} \\
      \textbf{Developer Tools}{: Git, *NIX, Docker, Google Cloud Platform} \\
      \textbf{Libraries}{: pandas, NumPy, Matplotlib, TensorFlow}
